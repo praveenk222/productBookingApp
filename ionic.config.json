@@ -1,0 +1,8 @@
+{
+  "name": "everapplication",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "4ad74119"
+}

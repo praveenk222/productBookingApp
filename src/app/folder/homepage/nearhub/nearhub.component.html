@@ -1,0 +1,24 @@
+<div *ngIf="slides.length > 0">
+  <swiper-container [modules]="swiperModules" [intialSlide]="2" [spaceBetween]="10" [slidesPerView]="2.5"> 
+ 
+    <swiper-slide   >
+ 
+      <div class="image-parent" >
+   <ion-row md="5">
+      <ion-card class="swap-battery-child" *ngFor="let slide of slides" >
+        <!-- <img alt="Silhouette of mountains" src="{{slide.img}}" class="image" />
+        <ion-card-header>
+          <ion-card-title>{{slide.name}}</ion-card-title>
+       
+        </ion-card-header> -->
+      
+   
+      </ion-card>
+    </ion-row>
+    </div>
+
+    </swiper-slide>
+
+  </swiper-container>
+
+</div>
