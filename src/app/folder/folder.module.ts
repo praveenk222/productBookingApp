@@ -10,12 +10,15 @@ import { FolderPage } from './folder.page';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NearhubComponent } from './homepage/nearhub/nearhub.component';
 
+
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     FolderPageRoutingModule,
+
 
   ],
   declarations: [FolderPage,HomepageComponent,NearhubComponent],

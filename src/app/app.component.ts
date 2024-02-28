@@ -5,7 +5,8 @@ import { Router } from '@angular/router';
 import { IonContent, NavController } from '@ionic/angular';
 import { BookingService } from 'src/Services/booking.service';
 import { UserData } from 'src/providers/user-data';
-
+import { register } from 'swiper/element/bundle';
+register();
 import { Geolocation, GeolocationPlugin } from '@capacitor/geolocation';
 @Component({
   selector: 'app-root',
