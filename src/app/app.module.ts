@@ -13,12 +13,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
+import { SharedModule } from 'src/shared/shared.module';
+import { TabsPage } from './folder/tabs/tabs.page';
+import { Tab1Page } from './folder/tab1/tab1.page';
+import { Tab2Page } from './folder/tab2/tab2.page';
+import { Tab3Page } from './folder/tab3/tab3.page';
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    TabsPage,
+    Tab1Page,
+    Tab2Page,
+    Tab3Page
+  ],
   imports: [
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,
+    SharedModule,
     HttpClientModule,
     IonicStorageModule.forRoot({ name: "mylocaldb" }),
     BrowserAnimationsModule,
