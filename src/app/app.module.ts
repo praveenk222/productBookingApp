@@ -18,13 +18,15 @@ import { TabsPage } from './folder/tabs/tabs.page';
 import { Tab1Page } from './folder/tab1/tab1.page';
 import { Tab2Page } from './folder/tab2/tab2.page';
 import { Tab3Page } from './folder/tab3/tab3.page';
+import { SwapbookComponent } from './folder/swapbook/swapbook.component';
 @NgModule({
   declarations: [
     AppComponent,
     TabsPage,
     Tab1Page,
     Tab2Page,
-    Tab3Page
+    Tab3Page,
+    SwapbookComponent
   ],
   imports: [
     BrowserModule, 
