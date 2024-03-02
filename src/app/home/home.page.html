@@ -1,0 +1,76 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <h1>Browse Book</h1>
+  
+
+    <ion-searchbar placeholder="Search Book" class="bar"></ion-searchbar>
+    <div class="anchor">
+    <h3>Newest books</h3>
+    <button><ion-icon name="arrow-forward-circle"></ion-icon></button>
+  </div>
+  
+      <swiper-container
+        #swiper
+        (afterinit)="swiperReady()"
+        (slidechange)="swiperSlideChanged($event)"
+        [loop]="true"
+        [zoom]="true" slides-per-view="2.5">
+  
+        <swiper-slide *ngFor="let image of images">
+          <div class="swiper-zoom-container" routerLink="product">
+            <img class="newest-img" [src]="image"/>
+          </div>
+        </swiper-slide>
+      </swiper-container>
+  
+
+      <div class="anchor">
+        <h3>Recommended</h3>
+       <button><ion-icon name="arrow-forward-circle"></ion-icon></button>
+      </div>
+  
+      <swiper-container
+      #swiper
+      (afterinit)="swiperReady()"
+      (slidechange)="swiperSlideChanged($event)"
+      [loop]="true"
+      [zoom]="true">
+  
+      <swiper-slide *ngFor="let card of cards">
+        <div class="swiper-zoom-container">
+          <div class="card"  style="width: 350px;" >
+         
+            <img class="newest" [src]="card" alt="">
+         
+         
+        </div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+
+  
+    <div class="anchor">
+      <h3>Last reviews</h3>
+     <ion-icon name="arrow-forward-circle"></ion-icon>
+    </div>
+
+    <swiper-container 
+    #swiper
+    (afterinit)="swiperReady()"
+    (slidechange)="swiperSlideChanged($event)"
+    [loop]="true"
+    [zoom]="true" slides-per-view="2.5">
+  
+    <swiper-slide *ngFor="let image of images">
+      <div class="swiper-zoom-container">
+        <img class="newest-img" [src]="image"/>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+
+  </ion-content>
+  
