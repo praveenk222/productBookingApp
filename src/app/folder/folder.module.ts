@@ -19,6 +19,7 @@ import { SharedModule } from 'src/shared/shared.module';
     CommonModule,
     FormsModule,
     IonicModule,
+    SharedModule,
     FolderPageRoutingModule,
   ],
   declarations: [

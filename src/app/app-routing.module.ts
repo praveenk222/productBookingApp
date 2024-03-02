@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { SwapbookComponent } from './folder/swapbook/swapbook.component';
 import { FolderPage } from './folder/folder.page';
 
 const routes: Routes = [
@@ -36,6 +35,10 @@ const routes: Routes = [
           {
             path: 'myProfile',
             loadChildren: () => import('./page/myprofile/myprofile.module').then((m) => m.MyprofilePageModule),
+          },
+          {
+            path: 'swap',
+            loadChildren: () => import('./swap/swap.module').then((m) => m.SwapPageModule),
           },
         ],
       },
