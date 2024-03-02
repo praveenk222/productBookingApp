@@ -20,7 +20,8 @@ import { FolderPage } from './folder/folder.page';
 @NgModule({
   declarations: [
     AppComponent,
-    SwapbookComponent
+    SwapbookComponent,
+    FolderPage
   ],
 
 

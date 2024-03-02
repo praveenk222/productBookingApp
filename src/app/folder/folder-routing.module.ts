@@ -11,12 +11,9 @@ import { HomePage } from '../home/home.page';
 
 const routes: Routes = [
   
+
   {
     path: '',
-    component:FolderPage
-  },
-  {
-    path: 'home',
     component: HomePage,
   },
  
