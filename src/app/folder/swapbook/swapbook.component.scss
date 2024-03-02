@@ -36,5 +36,17 @@
    padding-left: 10px;
    font-weight: 700;
   }
-
-  
+  ion-toolbar{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
+  .icon-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 1.3rem;
+  }
