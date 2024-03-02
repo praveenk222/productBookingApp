@@ -52,6 +52,8 @@ cards:any[]=[]
    
  ];
 
+ 
+
  swiperSlideChanged(e: any) {
   console.log('changed: ', e);
 }

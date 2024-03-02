@@ -9,6 +9,8 @@ import { FolderPageRoutingModule } from './folder-routing.module';
 import { FolderPage } from './folder.page';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NearhubComponent } from './homepage/nearhub/nearhub.component';
+import { ListComponent } from './list/list.component';
+import { BasketComponent } from './basket/basket.component';
 
 
 
@@ -21,7 +23,13 @@ import { NearhubComponent } from './homepage/nearhub/nearhub.component';
 
 
   ],
-  declarations: [FolderPage,HomepageComponent,NearhubComponent],
+  declarations: [
+    FolderPage,
+    HomepageComponent,
+    NearhubComponent,
+    ListComponent,
+    BasketComponent
+  ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class FolderPageModule {}

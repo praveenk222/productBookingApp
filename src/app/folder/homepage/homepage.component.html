@@ -1,13 +1,13 @@
 <ion-content>
- 
 <h1>Browse Book</h1>
 
 <ion-content scrollY="false">
   <ion-searchbar placeholder="Search Book" class="bar"></ion-searchbar>
   <div class="anchor">
   <h3>Newest books</h3>
-  <a href="">View all ></a>
+  <a href="">View all <ion-icon name="chevron-forward-outline"></ion-icon></a>
 </div>
+
     <swiper-container
       #swiper
       (afterinit)="swiperReady()"
@@ -21,9 +21,11 @@
         </div>
       </swiper-slide>
     </swiper-container>
+
+
     <div class="anchor">
       <h3>Recommended to you</h3>
-      <a href="">View all ></a>
+      <a href="">View all <ion-icon name="chevron-forward-outline"></ion-icon></a>
     </div>
     <swiper-container
     #swiper
@@ -40,18 +42,18 @@
           <div class="card-title">harry potter-1</div>
           <div class="card-subtitle"></div>
         </ion-card>
-
-    
       </div>
       </div>
     </swiper-slide>
   </swiper-container>
+
+
   <div class="anchor">
     <h3>Last reviews</h3>
-    <a href="">View all ></a>
+    <a href="">View all <ion-icon name="chevron-forward-outline"></ion-icon></a>
   </div>
     
-  <swiper-container
+  <swiper-container 
   #swiper
   (afterinit)="swiperReady()"
   (slidechange)="swiperSlideChanged($event)"
@@ -64,45 +66,16 @@
     </div>
   </swiper-slide>
 </swiper-container>
-<ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">
-  <ion-infinite-scroll-content></ion-infinite-scroll-content>
-</ion-infinite-scroll>
-  </ion-content>
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<ion-tabs class="down-tabs" >
+</ion-content>
+<ion-tabs class="down-tabs"  style="z-index: 2;">
     <ion-tab-bar slot="bottom">
         <ion-tab-button tab="search">
             <ion-icon name="search"></ion-icon>
             Search
           </ion-tab-button>
       <ion-tab-button tab="eye">
-        <ion-icon name="eye"></ion-icon>
+        <ion-icon name="eye-outline"></ion-icon>
         Discover
       </ion-tab-button>
       <ion-tab-button tab="arrow">
@@ -110,11 +83,20 @@
         Swaps
       </ion-tab-button>
       <ion-tab-button tab="chat">
-        <ion-icon name="chatbox">
-        </ion-icon>Chat</ion-tab-button>
+        <ion-icon name="chatbubble-outline"></ion-icon>
+        Chat</ion-tab-button>
       <ion-tab-button tab="profile">
-        <ion-icon name="person"></ion-icon>
+        <ion-icon name="person-outline"></ion-icon>
         Profile
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>
+
+  <!-- <ion-header>
+    <ion-toolbar>
+      <ion-title>Listen now</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <div class="example-content">Listen now content</div>
+  </ion-content> -->

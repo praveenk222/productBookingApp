@@ -17,7 +17,7 @@ import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
   declarations: [AppComponent],
   imports: [
     BrowserModule, 
-    IonicModule.forRoot(), 
+    IonicModule.forRoot(),  
     AppRoutingModule,
     HttpClientModule,
     IonicStorageModule.forRoot({ name: "mylocaldb" }),

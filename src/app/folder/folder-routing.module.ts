@@ -3,11 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { FolderPage } from './folder.page';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ListComponent } from './list/list.component';
+import { BasketComponent } from './basket/basket.component';
 
 const routes: Routes = [
+  
   {
     path: '',
-    component: HomepageComponent
+    component: HomepageComponent,
   },
 
 
