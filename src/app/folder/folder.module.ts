@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { FolderPageRoutingModule } from './folder-routing.module';
 
 import { FolderPage } from './folder.page';
+import { SharedModule } from 'src/shared/shared.module';
 
 
 
@@ -17,9 +18,7 @@ import { FolderPage } from './folder.page';
     FormsModule,
     IonicModule,
     FolderPageRoutingModule,
-
-
-  ],
+   ],
   declarations: [FolderPage],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })

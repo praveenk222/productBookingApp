@@ -5,23 +5,23 @@ import { FolderPage } from './folder/folder.page';
 
 const routes: Routes = [
 
-  // {
-  //   path: '',
-  //   loadChildren: () => import('./folder/folder.module').then(m => m.FolderPageModule)
-  // },
-  // {
-  //   path: 'folder',
-  //   loadChildren: () => import('./folder/folder.module').then(m => m.FolderPageModule)
-  // },
+  {
+    path: '',
+    loadChildren: () => import('./folder/folder.module').then(m => m.FolderPageModule)
+  },
+  {
+    path: 'folder',
+    loadChildren: () => import('./folder/folder.module').then(m => m.FolderPageModule)
+  },
   {
     path: 'swapbook',
     component: SwapbookComponent
   },
-  {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: 'home',
-  },
+  // {
+  //   path: '',
+  //   pathMatch: 'full',
+  //   redirectTo: 'folder',
+  // },
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then((m) => m.HomePageModule),

@@ -13,13 +13,7 @@ const routes: Routes = [
     path: '',
     component:FolderPage
   },
-  {
-    path: 'home',
-    component: HomePage,
-  },
  
-
-
 ];
 
 @NgModule({
