@@ -1,0 +1,28 @@
+ion-icon{
+    width: 30px;
+    height: 30px;
+}
+.back-btn{
+    width: 50px;
+    height: 50px;
+    background: none;
+}
+ion-card{
+  
+  height: 400px;
+  border-radius: 24px;
+
+}
+ion-card-content{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    width: 100%;
+}
+
+ion-button{
+    width: 200px;
+    height: 40px;
+    float: right;
+    --border-radius: 24px !important;
+}

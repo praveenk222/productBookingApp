@@ -7,8 +7,9 @@ import { IonicModule } from '@ionic/angular';
 import { FolderPageRoutingModule } from './folder-routing.module';
 
 import { FolderPage } from './folder.page';
-import { HomepageComponent } from './homepage/homepage.component';
-import { NearhubComponent } from './homepage/nearhub/nearhub.component';
+
+
+
 
 @NgModule({
   imports: [
@@ -17,8 +18,9 @@ import { NearhubComponent } from './homepage/nearhub/nearhub.component';
     IonicModule,
     FolderPageRoutingModule,
 
+
   ],
-  declarations: [FolderPage,HomepageComponent,NearhubComponent],
+  declarations: [FolderPage],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class FolderPageModule {}
