@@ -26,7 +26,8 @@ import { SwapbookComponent } from './folder/swapbook/swapbook.component';
     Tab1Page,
     Tab2Page,
     Tab3Page,
-    SwapbookComponent
+    SwapbookComponent,
+    ListBySubcategoryComponent
   ],
   imports: [
     BrowserModule, 
