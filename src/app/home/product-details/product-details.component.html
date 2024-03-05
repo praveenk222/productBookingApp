@@ -1,10 +1,19 @@
 <button class="back-btn">
 <ion-icon name="arrow-back-circle"></ion-icon></button>
-
-<ion-img
-  src="https://th.bing.com/th/id/OIP.4ZpS8cLoHF9-CHDYe8XJpwAAAA?rs=1&pid=ImgDetMain"
-  alt="The Wisconsin State Capitol building in Madison, WI at night" 
-></ion-img>
+<swiper-container
+        #swiper
+        
+        (slidechange)="swiperSlideChanged($event)"
+        [loop]="true"
+        [zoom]="true" slides-per-view="1" [pagination]="true"
+        >
+  
+        <swiper-slide *ngFor="let image of images">
+          <div class="swiper-zoom-container" routerLink="product">
+            <img class="newest-img" [src]="image"/>
+          </div>
+        </swiper-slide>
+      </swiper-container>
 
 <ion-card>
   <ion-card-header>
@@ -36,5 +45,14 @@
   <ion-card-content>
     Here's a small text description for the card content. Nothing more, nothing less.
   </ion-card-content>
-  <ion-button expand="block">Pay Now</ion-button>
+
+  <ion-card class="paper" >  
+    <ion-item class="wrapper">
+      <ion-span class="minus" (click)="decrementQuantity()">-</ion-span>
+      <ion-span class="num">{{quantity}}</ion-span>
+      <ion-span class="plus" (click)="incrementQuantity()">+</ion-span>
+    </ion-item> 
+     <a href="#" class="anchor-right">Add to Cart ></a>
+
 </ion-card>
+

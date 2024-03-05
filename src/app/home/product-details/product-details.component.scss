@@ -26,3 +26,64 @@ ion-button{
     float: right;
     --border-radius: 24px !important;
 }
+.red:before {
+    color: red;
+    }
+
+    .green:before {
+    color: green;
+    }
+
+    .flex_row {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row; 
+    flex-direction: row;
+    }
+    .paper{
+        height: 75px;
+        width: 370px;
+        display: flex;
+        background-color:rgb(143, 175, 143) ;
+        border-radius: 8px;
+
+    }
+.wrapper{
+    height: 50px;
+    width: 100px;
+    margin: 12px;
+    background: #FFF;
+    border-radius: 8px;
+}
+.wrapper ion-span{
+    width: 20px;
+    text-align: center;
+    font-size: 30px;
+    // justify-content: center;
+}
+.wrapper ion-span.num{
+    font-size: 25px;
+    margin: 4px;
+}
+.anchor-right{
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFF;
+    margin:25px 45px;
+}
+swiper-container {
+    width: 100%;
+    height: 30%;
+  }
+   
+  swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2px;
+  }
+  .newest-img{ 
+    width: 100%;
+    height:100% ;
+}
