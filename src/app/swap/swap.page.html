@@ -1,0 +1,39 @@
+<ion-content scrollY="true">
+  <h1>Your swaps</h1>
+  <div class="btn-container" >
+    <ion-button color="light">outgoing</ion-button>
+    <ion-button color="transparent">incoming</ion-button>
+  </div>
+  <ion-card *ngFor="let swap of swapcards">
+    <ion-card-content>
+      <img alt="Silhouette of mountains" [src]="swap.image" />
+      <div class="content" slot="start">
+        <ion-label>{{swap.title}}</ion-label>
+        <ion-label>
+          <i class="bi bi-chevron-compact-right"></i>Return swap  with
+          <div style="display: flex; gap: 10px;align-items: center;">
+            <ion-avatar style="width: 30px; height: 30px;">
+              <img src="http://www.hotavatars.com/wp-content/uploads/2019/01/I80W1Q0.png"  alt="Avatar Image" style="width: 100%; height: 100%; object-fit: cover;">
+            </ion-avatar> 
+            <span>{{ swap.name}}</span>
+          </div>
+        </ion-label>
+      </div>
+      <ion-button [color]="swap.status === 'Pending' ? 'primary' : swap.status==='Active' ? 'success' :'light'">{{ swap.status }}</ion-button>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>
+
+<ion-toolbar>
+  <div class="icon-container">
+  <ion-label>
+   <ion-icon name="search" routerLink="/home"></ion-icon>
+   <!-- <ion-label style="display: block; font-size: 12px;">search</ion-label> -->
+  </ion-label>
+   <ion-icon name="eye"></ion-icon>
+   <ion-icon name="swap-horizontal"></ion-icon>
+   <ion-icon name="chatbubble"></ion-icon>
+   <ion-icon name="person-circle"></ion-icon>
+  </div>
+ </ion-toolbar>

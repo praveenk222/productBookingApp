@@ -13,14 +13,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
-
+import { SharedModule } from 'src/shared/shared.module';
 import { FolderPage } from './folder/folder.page';
+
 @NgModule({
-  declarations: [AppComponent,FolderPage],
+  declarations: [
+    AppComponent,
+    FolderPage
+  ],
+
+
   imports: [
     BrowserModule, 
     IonicModule.forRoot(),  
     AppRoutingModule,
+    SharedModule,
     HttpClientModule,
     IonicStorageModule.forRoot({ name: "mylocaldb" }),
     BrowserAnimationsModule,

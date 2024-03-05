@@ -9,6 +9,7 @@ import { FolderPageRoutingModule } from './folder-routing.module';
 import { FolderPage } from './folder.page';
 import { ListComponent } from './list/list.component';
 import { BasketComponent } from './basket/basket.component';
+import { SharedModule } from 'src/shared/shared.module';
 
 
 
@@ -18,6 +19,7 @@ import { BasketComponent } from './basket/basket.component';
     CommonModule,
     FormsModule,
     IonicModule,
+    SharedModule,
     FolderPageRoutingModule,
   ],
   declarations: [
@@ -26,6 +28,7 @@ import { BasketComponent } from './basket/basket.component';
     ListComponent,
     BasketComponent
   ],
+   
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class FolderPageModule {}

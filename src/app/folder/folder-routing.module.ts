@@ -4,19 +4,19 @@ import { Routes, RouterModule } from '@angular/router';
 import { FolderPage } from './folder.page';
 import { ListComponent } from './list/list.component';
 import { BasketComponent } from './basket/basket.component';
+// import { ListComponent } from './list/list.component';
+// import { BasketComponent } from './basket/basket.component';
 import { HomePage } from '../home/home.page';
 
 
 const routes: Routes = [
   
+
   {
     path: '',
-    component:FolderPage
-  },
-  {
-    path: 'home',
     component: HomePage,
   },
+
  
 
 

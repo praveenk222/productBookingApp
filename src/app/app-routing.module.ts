@@ -7,11 +7,9 @@ const routes: Routes = [
 
 
 ];
-
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
-
     RouterModule.forRoot([
       {
         path: '',
@@ -31,17 +29,23 @@ const routes: Routes = [
             loadChildren: () => import('./radio/radio.module').then((m) => m.RadioPageModule),
           },
           {
-            path: 'library',
-            loadChildren: () => import('./library/library.module').then((m) => m.LibraryPageModule),
+            path: 'mybookings',
+            loadChildren: () => import('./page/mybookings/mybookings.module').then((m) => m.MybookingsPageModule),
           },
           {
-            path: 'search',
-            loadChildren: () => import('./search/search.module').then((m) => m.SearchPageModule),
+            path: 'myProfile',
+            loadChildren: () => import('./page/myprofile/myprofile.module').then((m) => m.MyprofilePageModule),
+          },
+          {
+            path: 'swap',
+            loadChildren: () => import('./swap/swap.module').then((m) => m.SwapPageModule),
           },
         ],
       },
     ]),
   ],
+
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+
+export class AppRoutingModule { }
