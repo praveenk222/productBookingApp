@@ -32,13 +32,13 @@ export class ProductDetailsComponent  implements OnInit {
   }
 
   images = [
-    'https://manybooks.net/sites/default/files/styles/220x330sc/public/webform/ebook_feature_application/7996/galaxy_bridge_01_forward_command_final.jpg?itok=TQsywqWl' ,
-    'https://manybooks.net/sites/default/files/styles/220x330sc/public/webform/ebook_feature_application/8306/wm_ebook.jpg?itok=UvWKNNlN',
-    'https://manybooks.net/sites/default/files/styles/220x330sc/public/webform/ebook_feature_application/9021/the_baby_farm_murders_ebook.jpeg?itok=s5O8SbHR',
-    'https://manybooks.net/sites/default/files/styles/220x330sc/public/webform/ebook_feature_application/8781/the-origin-of-dreams-coverfront-%5B12-10-23%5D.jpg?itok=z553KW6L',
-    'https://manybooks.net/sites/default/files/styles/220x330sc/public/webform/ebook_feature_application/8821/91awfmnc1ul._sl1500_.jpg?itok=brVLW0fG',
-    'https://manybooks.net/sites/default/files/styles/220x330sc/public/2023-12/91qRbebr-zL._SL1500_.jpg?itok=eqzqoiy2',
-    'https://manybooks.net/sites/default/files/styles/220x330sc/public/2023-10/8157SgW4qjL._SL1500_.jpg?itok=rCRvVJaq',
+    'https://m.media-amazon.com/images/I/71r55-KjjpL._SY522_.jpg' ,
+    'https://m.media-amazon.com/images/I/81Q8jh4dEoL._SX679_.jpg',
+    'https://m.media-amazon.com/images/I/81mnstacemL._SY522_.jpg',
+    'https://m.media-amazon.com/images/I/91Mfev--rIL._SY522_.jpg',
+    'https://m.media-amazon.com/images/I/91z3jM3x82L._SL1500_.jpg',
+    'https://m.media-amazon.com/images/I/817nHDZNvhL._SL1500_.jpg',
+    'https://m.media-amazon.com/images/I/81nRLwdz22L._SL1500_.jpg',
     
   ];
  
