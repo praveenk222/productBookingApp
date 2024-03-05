@@ -7,18 +7,28 @@ import { IonicModule } from '@ionic/angular';
 import { FolderPageRoutingModule } from './folder-routing.module';
 
 import { FolderPage } from './folder.page';
-import { HomepageComponent } from './homepage/homepage.component';
-import { NearhubComponent } from './homepage/nearhub/nearhub.component';
+import { ListComponent } from './list/list.component';
+import { BasketComponent } from './basket/basket.component';
+import { SharedModule } from 'src/shared/shared.module';
+
+
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    SharedModule,
     FolderPageRoutingModule,
-
   ],
-  declarations: [FolderPage,HomepageComponent,NearhubComponent],
+  declarations: [
+    FolderPage,
+    
+    ListComponent,
+    BasketComponent
+  ],
+   
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class FolderPageModule {}

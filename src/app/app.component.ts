@@ -5,7 +5,8 @@ import { Router } from '@angular/router';
 import { IonContent, NavController } from '@ionic/angular';
 import { BookingService } from 'src/Services/booking.service';
 import { UserData } from 'src/providers/user-data';
-
+import { register } from 'swiper/element/bundle';
+register();
 import { Geolocation, GeolocationPlugin } from '@capacitor/geolocation';
 @Component({
   selector: 'app-root',
@@ -44,8 +45,7 @@ export class AppComponent {
   
     constructor(private _bh:BookingService,private element: ElementRef,private userdata: UserData,private http:HttpClient,private route:Router,
       // private authService: SocialAuthService, 
-      public navCtrl: NavController,private geolocation: Geolocation ) {
-      this.getbranchesByBID();
+      public navCtrl: NavController ) {
       this.userdata.getuser().then((res:any) => {
         if (res !== null) {
   
@@ -72,9 +72,9 @@ export class AppComponent {
   
     }
     ngOnInit() {
-      this.printCurrentPosition();
+      // this.printCurrentPosition();
       // this.slides=[];
-      this.address();
+      // this.address();
 
      
     }
@@ -98,29 +98,7 @@ export class AppComponent {
     this.content.scrollToTop(500);
   }
   
-  printCurrentPosition() {
-    var coordinates = Geolocation.getCurrentPosition().then((resp) => { 
-    this.lati = resp.coords.latitude;  
-      this.longi = resp.coords.longitude;  
-    })
-    console.log('Current position:', coordinates);
-  };
-  address(){
-    var coordinates = Geolocation.getCurrentPosition().then((resp) => { 
-      this.lati = resp.coords.latitude;  
-        this.longi = resp.coords.longitude;  
-        this.http.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${this.lati},${this.longi}&key=AIzaSyCU4W4iQLV5ydrW3UxZncI_JdLi1EsKH5A`).subscribe((res:any)=>{
-          this.loc=res['plus_code']  
-          console.log(res.results[0].formatted_address)
-          console.log(res.results[8].formatted_address)
-          this.useraddress=res.results[8].formatted_address
-          this.userdata.setNew('userlocation',this.useraddress)
-          console.log(res)
-          })
-      })
-      console.log('Current position:', coordinates);
-  
-  }
+
   
   
   
