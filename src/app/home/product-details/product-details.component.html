@@ -1,5 +1,5 @@
-<button class="back-btn">
-<ion-icon name="arrow-back-circle"></ion-icon></button>
+<button class="back-btn" routerLink="/home">
+<ion-icon name="arrow-back-circle" ></ion-icon></button>
 <swiper-container
         #swiper
         (slidechange)="swiperSlideChanged($event)"
@@ -10,7 +10,7 @@
   
         <swiper-slide *ngFor="let image of images">
           <div class="swiper-zoom-container" routerLink="product">
-            <img class="newest-img" [src]="image" style="height: 200px;width: 300px;border-radius: 4px;"/>
+            <img class="newest-img" [src]="image"/>
           </div>
         </swiper-slide>
       </swiper-container>
@@ -46,13 +46,12 @@
     Explore the remarkable autobiography of Mahatma Gandhi, "The Story of My Experiments with Truth."
   </ion-card-content>
 
-  <ion-card class="paper" >  
+  <ion-card class="paper" > 
+    <a href="#" class="anchor-right">Add to Cart ></a> 
     <ion-item class="wrapper">
       <ion-span class="minus" (click)="decrementQuantity()">-</ion-span>
       <ion-span class="num">{{quantity}}</ion-span>
       <ion-span class="plus" (click)="incrementQuantity()">+</ion-span>
     </ion-item> 
-     <a href="#" class="anchor-right">Add to Cart ></a>
-
 </ion-card>
 

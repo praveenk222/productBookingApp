@@ -26,14 +26,6 @@ ion-button{
     float: right;
     --border-radius: 24px !important;
 }
-.red:before {
-    color: red;
-    }
-
-    .green:before {
-    color: green;
-    }
-
     .flex_row {
     display: -webkit-flex;
     display: flex;
@@ -51,15 +43,13 @@ ion-button{
 .wrapper{
     height: 50px;
     width: 100px;
-    margin: 12px;
+    margin:15px 0 0 75px;
     background: #FFF;
     border-radius: 8px;
 }
 .wrapper ion-span{
     width: 20px;
-    text-align: center;
     font-size: 30px;
-    // justify-content: center;
 }
 .wrapper ion-span.num{
     font-size: 25px;
@@ -69,7 +59,7 @@ ion-button{
     text-decoration: none;
     font-size: 25px;
     color: #FFF;
-    margin:25px 45px;
+    margin:20px 15px;
 }
 swiper-container {
     width: 100%;
@@ -83,16 +73,3 @@ swiper-container {
     justify-content: center;
     padding-right: 2px;
   }
-
-//   .circular-image {
-//     width: 50px; /* Set the width and height of the circular image */
-//     height: 50px;
-//     border-radius: 50%; /* Create a circular shape */
-//     overflow: hidden; /* Hide overflowing content (necessary if image dimensions exceed container dimensions) */
-//   }
-  
-//   .circular-image img {
-//     width: 100%; /* Make sure the image fills the circular container */
-//     height: auto;
-//   }
-  
