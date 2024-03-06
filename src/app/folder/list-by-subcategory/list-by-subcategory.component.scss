@@ -1,0 +1,27 @@
+ion-col:nth-child(2){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+ion-label{
+    display: block;
+    padding: 9px ;
+}
+ion-card-title {
+    font-size: 18px;
+    padding:7px 5px;
+    font-weight: 700;
+}
+ion-label:hover{
+    color: #18b888;
+}
+ion-card{
+    --ion-background-color: rgba(138, 242, 183, 0.515);
+    padding-block: 25px;
+}
+img {
+    height:minmax(120px,1fr);
+}
+ion-searchbar {
+    --border-radius: 10px;
+}
