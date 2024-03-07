@@ -11,5 +11,10 @@ export class MyaddressPage implements OnInit {
 
   ngOnInit() {
   }
-
+  
+  address=[
+    {name:'reddy',apartment:'sumanth nivas',city:'hyd',distract:'Rangareddy',state:'Telengana',country:'ind',pincode:'500090'},
+    {name:'reddy',apartment:'sumanth nivas',city:'hyd',distract:'Rangareddy',state:'Telengana',country:'ind',pincode:'500090'},
+    {name:'reddy',apartment:'sumanth nivas',city:'hyd',distract:'Rangareddy',state:'Telengana',country:'ind',pincode:'500085'},
+   ]
 }

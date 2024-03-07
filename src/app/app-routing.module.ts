@@ -13,7 +13,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
     RouterModule.forRoot([
       {
-        path:'address',
+        path:'',
         component:MyaddressPage
       },
       {
@@ -44,6 +44,14 @@ const routes: Routes = [
           {
             path: 'swap',
             loadChildren: () => import('./swap/swap.module').then((m) => m.SwapPageModule),
+          },
+          {
+            path: 'myaddress',
+            loadChildren: () => import('./myaddress/myaddress.module').then((m) => m.MyaddressPageModule),
+          },
+          {
+            path: 'profile',
+            loadChildren: () => import('./profile/profile.module').then((m) => m.ProfilePageModule),
           },
         ],
       },
