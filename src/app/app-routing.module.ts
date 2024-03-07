@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { FolderPage } from './folder/folder.page';
 import { MyaddressPage } from './myaddress/myaddress.page';
+import { WishlistPage } from './wishlist/wishlist.page';
+import { ProfilePage } from './profile/profile.page';
 
 const routes: Routes = [
 
@@ -14,7 +16,7 @@ const routes: Routes = [
     RouterModule.forRoot([
       {
         path:'',
-        component:MyaddressPage
+        component:ProfilePage
       },
       {
         path: 'folder',
@@ -52,6 +54,10 @@ const routes: Routes = [
           {
             path: 'profile',
             loadChildren: () => import('./profile/profile.module').then((m) => m.ProfilePageModule),
+          },
+          {
+            path: 'wishlist',
+            loadChildren: () => import('./wishlist/wishlist.module').then((m) => m.WishlistPageModule),
           },
         ],
       },
