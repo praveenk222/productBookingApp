@@ -72,9 +72,9 @@
     [loop]="true"
     [zoom]="true" slides-per-view="2.5">
   
-    <swiper-slide *ngFor="let image of images">
+    <swiper-slide *ngFor="let book of books">
       <div class="swiper-zoom-container">
-        <img class="newest-img" [src]="image"/>
+        <img class="newest-img" [src]="book"/>
       </div>
     </swiper-slide>
   </swiper-container>
