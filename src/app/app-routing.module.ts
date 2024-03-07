@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { FolderPage } from './folder/folder.page';
+import { MyaddressPage } from './myaddress/myaddress.page';
 
 const routes: Routes = [
 
@@ -12,7 +13,11 @@ const routes: Routes = [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
     RouterModule.forRoot([
       {
-        path: '',
+        path:'',
+        component:MyaddressPage
+      },
+      {
+        path: 'folder',
         component: FolderPage,
         children: [
           {
