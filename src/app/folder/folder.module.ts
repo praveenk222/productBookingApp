@@ -10,6 +10,7 @@ import { FolderPage } from './folder.page';
 import { ListComponent } from './list/list.component';
 import { BasketComponent } from './basket/basket.component';
 import { SharedModule } from 'src/shared/shared.module';
+import { ListBySubcategoryComponent } from './list-by-subcategory/list-by-subcategory.component';
 
 
 
@@ -26,7 +27,8 @@ import { SharedModule } from 'src/shared/shared.module';
     FolderPage,
     
     ListComponent,
-    BasketComponent
+    BasketComponent,
+    ListBySubcategoryComponent
   ],
    
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
