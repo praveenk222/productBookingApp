@@ -13,7 +13,19 @@ const routes: Routes = [
   {
     path:'product',
     component:ProductDetailsComponent
+  },  {
+    path: 'trackmyorder',
+    loadChildren: () => import('./trackmyorder/trackmyorder.module').then( m => m.TrackmyorderPageModule)
+  },
+  {
+    path: 'searchresult',
+    loadChildren: () => import('./searchresult/searchresult.module').then( m => m.SearchresultPageModule)
+  },
+  {
+    path: 'productview',
+    loadChildren: () => import('./productview/productview.module').then( m => m.ProductviewPageModule)
   }
+
 ];
 
 @NgModule({

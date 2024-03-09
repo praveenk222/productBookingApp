@@ -4,7 +4,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable, Subscription, interval, of, timer } from 'rxjs';
 import { catchError, map, shareReplay } from 'rxjs/operators';
 import { ViewChild, ElementRef } from '@angular/core';
-import { InfiniteScrollCustomEvent, IonContent, PopoverController } from '@ionic/angular';
+import { InfiniteScrollCustomEvent, PopoverController } from '@ionic/angular';
 import { Injectable, NgZone } from '@angular/core';
 import { filter, scan } from 'rxjs/operators';
 import { Swiper } from 'swiper';

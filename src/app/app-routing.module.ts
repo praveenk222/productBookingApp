@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { FolderPage } from './folder/folder.page';
+import { TrackmyorderPage } from './home/trackmyorder/trackmyorder.page';
+import { SearchresultPage } from './home/searchresult/searchresult.page';
+import { ProductviewPage } from './home/productview/productview.page';
 
 const routes: Routes = [
 
@@ -12,7 +15,19 @@ const routes: Routes = [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
     RouterModule.forRoot([
       {
-        path: '',
+        path:'',
+        component:ProductviewPage
+      },
+      {
+        path:'searchresult',
+        component:SearchresultPage
+      },
+      {
+        path:'trackmyorder',
+        component:TrackmyorderPage
+      },
+      {
+        path: 'folder',
         component: FolderPage,
         children: [
           {
