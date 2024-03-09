@@ -1,0 +1,33 @@
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+    font-weight: bold;
+}
+a:hover{
+    color:rgb(15, 92, 15); ;
+}
+// .card-content {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+.grid-1{
+    width: 60px;
+    
+}
+.grid-2{
+    width: 60px;
+}
+.grid-3{
+    width: 60px;
+}
+.grid-4{
+    width: 60px;
+}
+
+  
