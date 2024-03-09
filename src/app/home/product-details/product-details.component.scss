@@ -50,10 +50,12 @@ ion-button{
 .wrapper ion-span{
     width: 20px;
     font-size: 30px;
+    display: flex;
 }
 .wrapper ion-span.num{
-    font-size: 25px;
-    margin: 4px;
+    font-size: 20px;
+    display: flex;
+    margin-right: 5px;
 }
 .anchor-right{
     text-decoration: none;
