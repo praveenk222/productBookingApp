@@ -1,0 +1,34 @@
+ion-button{
+    display: block;
+    margin: 8px;
+    padding-block: 5px;
+  }
+  span{
+    margin-inline: 60px;
+  }
+    .address{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px;
+    }
+    h2{
+      padding-inline: 10px;
+      margin-block: 10px;
+    }
+    ion-label{
+      margin-block: 5px;
+      line-height: 1.5;
+    }
+    .button-with-icon {
+        display: flex;
+        align-items: center;
+        padding: 5px 12px;
+        border: 1px solid;
+        height: 60px;
+      }
+      ion-icon{
+        font-size: 1.6rem;
+        padding-left: 10px;
+    }
+      

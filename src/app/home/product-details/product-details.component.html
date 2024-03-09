@@ -1,15 +1,25 @@
-<button class="back-btn">
-<ion-icon name="arrow-back-circle"></ion-icon></button>
-
-<ion-img
-  src="https://th.bing.com/th/id/OIP.4ZpS8cLoHF9-CHDYe8XJpwAAAA?rs=1&pid=ImgDetMain"
-  alt="The Wisconsin State Capitol building in Madison, WI at night" 
-></ion-img>
+<button class="back-btn" routerLink="/home">
+<ion-icon name="arrow-back-circle" ></ion-icon></button>
+<swiper-container
+        #swiper
+        (slidechange)="swiperSlideChanged($event)"
+        [loop]="true"
+        [zoom]="true" 
+        slides-per-view="1" 
+        [pagination]="true"
+        >
+  
+        <swiper-slide *ngFor="let image of images">
+          <div class="swiper-zoom-container" routerLink="product">
+            <img class="newest-img" [src]="image"/>
+          </div>
+        </swiper-slide>
+      </swiper-container>
 
 <ion-card>
   <ion-card-header>
-    <ion-card-title>Harrypotter</ion-card-title>
-    <ion-card-subtitle>Wings of fire</ion-card-subtitle>
+    <ion-card-title>Mahatma Gandhi</ion-card-title>
+    <ion-card-subtitle>Autography</ion-card-subtitle>
   </ion-card-header>
   <ion-card-content>
     125 rs 25% 0ff
@@ -34,7 +44,15 @@
       </ion-accordion-group>
       </ion-card-content>
   <ion-card-content>
-    Here's a small text description for the card content. Nothing more, nothing less.
+    Explore the remarkable autobiography of Mahatma Gandhi, "The Story of My Experiments with Truth."
   </ion-card-content>
-  <ion-button expand="block">Pay Now</ion-button>
+
+  <ion-card class="paper" > 
+    <a href="#" class="anchor-right">Add to Cart ></a> 
+    <ion-item class="wrapper">
+      <ion-span class="minus" (click)="decrementQuantity()">-</ion-span>
+      <ion-span class="num">{{quantity}}</ion-span>
+      <ion-span class="plus" (click)="incrementQuantity()">+</ion-span>
+    </ion-item> 
 </ion-card>
+
