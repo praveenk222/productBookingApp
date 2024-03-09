@@ -1,8 +1,8 @@
 {
-  "name": "everapplication",
+  "name": "productbookingapp",
   "integrations": {
     "capacitor": {}
   },
   "type": "angular",
-  "id": "4ad74119"
+  "id": "8658eb30"
 }

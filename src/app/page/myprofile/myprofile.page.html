@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>myprofile</ion-title>
   </ion-toolbar>
@@ -10,4 +10,49 @@
       <ion-title size="large">myprofile</ion-title>
     </ion-toolbar>
   </ion-header>
-</ion-content>
+</ion-content> -->
+
+
+
+
+    <ion-list style="display: flex;align-items: center;justify-content: center;padding: 5%;">
+  
+        <ion-thumbnail slot="start">
+          <img style="border-radius: 100%;" alt="Silhouette of mountains" src="https://i.pinimg.com/originals/4e/6f/43/4e6f43f64610a9bf1a2f537e5e4cda6e.jpg" />
+        </ion-thumbnail>
+     
+   
+    
+      
+      </ion-list>
+
+      <ion-label align="center">Narendra</ion-label>
+     
+      <ion-content style="display: flex;align-items: center;justify-content: center;">
+        <ion-list [inset]="true">
+     
+      <ion-list lines="none">
+        <ion-item>
+          <ion-icon aria-hidden="true" name="person-circle-outline" slot="start"></ion-icon>
+        
+          <ion-label>MyProfile</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon aria-hidden="true" name="heart-circle-outline" slot="start"></ion-icon>
+       
+          <ion-label>Favourite</ion-label>
+          <ion-badge slot="end">22</ion-badge>
+        </ion-item>
+        <ion-item>
+          <ion-icon aria-hidden="true" name="settings" slot="start"></ion-icon>
+          <ion-label>Settings</ion-label>
+        </ion-item>
+       
+      </ion-list>
+      </ion-list>
+      </ion-content>
+      <ion-button fill="outline" class="logout-btn">
+       
+        Logout</ion-button>
+        <ion-ripple-effect></ion-ripple-effect>
+      

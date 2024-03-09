@@ -11,5 +11,9 @@ export class RadioPage implements OnInit {
 
   ngOnInit() {
   }
+  linkClicked: boolean = false;
 
+  changeColor() {
+      this.linkClicked = !this.linkClicked;
+  }
 }

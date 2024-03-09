@@ -234,11 +234,11 @@
     --ion-card-background: #1e1e1e;
   }
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 html {
   /* 
    * For more information on dynamic font scaling, visit the documentation:
    * https://ionicframework.com/docs/layout/dynamic-font-scaling
    */
-  --ion-dynamic-font:"Open Sans", sans-serif;
+  --ion-dynamic-font: var(--ion-default-dynamic-font);
 }

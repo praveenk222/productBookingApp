@@ -4,12 +4,11 @@ import { FolderPage } from './folder/folder.page';
 
 const routes: Routes = [
 
-
-
 ];
+
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+    // RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
     RouterModule.forRoot([
       {
         path: '',
@@ -44,8 +43,6 @@ const routes: Routes = [
       },
     ]),
   ],
-
   exports: [RouterModule]
 })
-
-export class AppRoutingModule { }
+export class AppRoutingModule {}
