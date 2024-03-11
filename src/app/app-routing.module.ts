@@ -59,10 +59,10 @@ import { ProductviewPage } from './home/productview/productview.page';
           //   path: 'wishlist',
           //   loadChildren: () => import('./wishlist/wishlist.module').then((m) => m.WishlistPageModule),
           // },
-          // {
-          //   path: 'my-bag',
-          //   loadChildren: () => import('./my-bag/my-bag.module').then((m) => m.MyBagPageModule),
-          // },
+          {
+            path: 'mybag',
+            loadChildren: () => import('./mybag/mybag.module').then((m) => m.MybagPageModule),
+          },
           {
             path: 'folder',
             loadChildren: () => import('./folder/folder.module').then((m) => m.FolderPageModule),

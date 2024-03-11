@@ -1,0 +1,59 @@
+
+<ion-header [translucent]="true">
+  <ion-icon name="arrow-back-outline"></ion-icon>
+  <ion-title>My Bag</ion-title>
+  <ion-icon name="heart-outline"></ion-icon>
+</ion-header>
+ 
+<ion-content [fullscreen]="true">
+  <ion-card *ngFor="let bag of  baglist" class="cardBag">
+    <img [src]="bag.bagImg" alt="">
+     <ion-card-content>
+      <ion-label>{{bag.type}}</ion-label>
+      <ion-label>Color:{{bag.color}} <span> Size:{{bag.size}}</span></ion-label>
+      <ion-label>
+        <span><ion-icon name="remove-outline" (click)="itemDecre()"></ion-icon></span>
+        <span>{{itemCount}}</span>
+        <span><ion-icon name="add-outline" (click)="itemIncre()"></ion-icon></span>
+      </ion-label>
+     </ion-card-content>
+   <div class="vertical-align-end">
+    <ion-label color="dark" >{{(bag.price | currency: 'INR')}}</ion-label>
+   </div>
+  </ion-card>
+  <ion-item>
+    <ion-label><ion-icon name="wallet-outline" style="padding-right: 10px;"></ion-icon>Apply Coupon</ion-label>
+    <ion-select >
+      <ion-select-option value="option1">Option 1</ion-select-option>
+      <ion-select-option value="option2">Option 2</ion-select-option>
+      <ion-select-option value="option3">Option 3</ion-select-option>
+    </ion-select>
+  </ion-item>
+ 
+  <div class="address" *ngFor="let bill of billAmount" scrollY="true">
+    <ion-card color="light">
+    <table>
+     <tbody>
+      <tr>
+        <td>Total Amount of items added</td>
+        <td>{{bill.total}}/-</td>
+      </tr>
+      <tr>
+        <td>Applying coupon-{{bill.total}}-{{bill.couponCode}}</td>
+        <td>{{ parseToInt(bill.total) - parseToInt(bill.couponCode) }}/-</td>
+      </tr>
+      <tr>
+        <td>GST(5%)</td> <td>{{bill.gst}}</td>
+      </tr>
+      <tr>
+        <td>Delivery Charge</td> <td> {{bill.dCharge}}</td>
+      </tr>
+      <tr>
+        <td>Grand Total  </td> <td>{{ parseToInt(bill.total) - parseToInt(bill.couponCode) + parseToInt(bill.gst) + parseToInt(bill.dCharge) }}/-</td>
+      </tr>
+     </tbody>
+    </table>
+  </ion-card>
+  </div>
+  <ion-button color="dark">Checkout</ion-button>
+</ion-content>
