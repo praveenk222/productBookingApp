@@ -95,21 +95,14 @@
       [zoom]="true">
   
       <swiper-slide *ngFor="let card of cards">
-        <!-- <div class="swiper-zoom-container">
-          <div class="card"  style="width: 350px;" > -->
+        <div class="swiper-zoom-container">
+          <div class="card"  style="width: 350px;" >
          
-            <!-- <img class="newest" [src]="card" alt=""> -->
+            <img class="newest" [src]="card" alt="">
          
-            <ion-card style="width: 350px; height: 150px;">
-              <ion-grid>
-                <ion-row>
-                  <ion-col><img [src]="card" alt="" style="width: 100px;height: 130px; border-radius: 8px;"></ion-col>
-                  <ion-col style="font-size: 25px;">Books</ion-col>
-                </ion-row>
-              </ion-grid>
-            </ion-card>
-        <!-- </div>
-        </div> -->
+         
+        </div>
+        </div>
       </swiper-slide>
     </swiper-container>
 
@@ -126,9 +119,9 @@
     [loop]="true"
     [zoom]="true" slides-per-view="2.5">
   
-    <swiper-slide *ngFor="let book of books">
+    <swiper-slide *ngFor="let image of images">
       <div class="swiper-zoom-container">
-        <img class="newest-img" [src]="book"/>
+        <img class="newest-img" [src]="image"/>
       </div>
     </swiper-slide>
   </swiper-container>

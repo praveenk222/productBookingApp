@@ -1,10 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { FolderPage } from './folder/folder.page';
-import { MyaddressPage } from './myaddress/myaddress.page';
-import { WishlistPage } from './wishlist/wishlist.page';
-import { ProfilePage } from './profile/profile.page';
-import { MyBagPage } from './my-bag/my-bag.page';
 
 const routes: Routes = [
 
@@ -14,7 +10,6 @@ const routes: Routes = [
   imports: [
     // RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
     RouterModule.forRoot([
-     
       {
         path: '',
         component: FolderPage,
@@ -43,22 +38,6 @@ const routes: Routes = [
           {
             path: 'swap',
             loadChildren: () => import('./swap/swap.module').then((m) => m.SwapPageModule),
-          },
-          {
-            path: 'myaddress',
-            loadChildren: () => import('./myaddress/myaddress.module').then((m) => m.MyaddressPageModule),
-          },
-          {
-            path: 'profile',
-            loadChildren: () => import('./profile/profile.module').then((m) => m.ProfilePageModule),
-          },
-          {
-            path: 'wishlist',
-            loadChildren: () => import('./wishlist/wishlist.module').then((m) => m.WishlistPageModule),
-          },
-          {
-            path: 'my-bag',
-            loadChildren: () => import('./my-bag/my-bag.module').then((m) => m.MyBagPageModule),
           },
         ],
       },
