@@ -59,7 +59,16 @@ scrollToTop() {
   
 
  }
- 
+ books = [
+  "https://imgix.bustle.com/uploads/image/2018/11/26/303ba8eb-9308-48f3-8a71-bfa48bcc6da2-fictionbest.jpg?w=1200&h=630&fit=crop&crop=faces&fm=jpg" ,
+  'https://imgix.bustle.com/uploads/image/2018/11/26/303ba8eb-9308-48f3-8a71-bfa48bcc6da2-fictionbest.jpg?w=1200&h=630&fit=crop&crop=faces&fm=jpg',
+  'https://imgix.bustle.com/uploads/image/2018/11/26/303ba8eb-9308-48f3-8a71-bfa48bcc6da2-fictionbest.jpg?w=1200&h=630&fit=crop&crop=faces&fm=jpg',
+   'https://imgix.bustle.com/uploads/image/2018/11/26/303ba8eb-9308-48f3-8a71-bfa48bcc6da2-fictionbest.jpg?w=1200&h=630&fit=crop&crop=faces&fm=jpg',
+   'https://imgix.bustle.com/uploads/image/2018/11/26/303ba8eb-9308-48f3-8a71-bfa48bcc6da2-fictionbest.jpg?w=1200&h=630&fit=crop&crop=faces&fm=jpg',
+   'https://imgix.bustle.com/uploads/image/2018/11/26/303ba8eb-9308-48f3-8a71-bfa48bcc6da2-fictionbest.jpg?w=1200&h=630&fit=crop&crop=faces&fm=jpg',
+  'https://imgix.bustle.com/uploads/image/2018/11/26/303ba8eb-9308-48f3-8a71-bfa48bcc6da2-fictionbest.jpg?w=1200&h=630&fit=crop&crop=faces&fm=jpg',
+  
+];
 
  @ViewChild('swiper')
 //  swiperRef: ElementRef | undefined;

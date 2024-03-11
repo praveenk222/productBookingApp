@@ -1,0 +1,46 @@
+
+<ion-content>
+      <ion-grid>
+        <ion-row >
+          <ion-col size="2">
+            <ion-icon name="arrow-back-circle" class="back-arrow"></ion-icon>
+          </ion-col>
+          <ion-col size="10" >
+           <h1 class="head1">Track Order</h1>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <h1 class="head2">Order Details</h1>
+      <ion-label>Order Number # 98765432199/5</ion-label><br>
+      <ion-label >Customer Name : Sneha Gadkar</ion-label><br>  
+      <ion-label >Payment Mode : Cash On Delivery</ion-label>
+      <ion-card color="medium" class="card1"> 
+      </ion-card>
+      
+      <ion-card class="gary" *ngFor="let dress of dresses">
+        <ion-grid>
+          <ion-row>
+            <ion-col class="gary"> <img [src]="dress.image" alt=""></ion-col>
+            <ion-col style="margin: 10px;">
+              <ion-card-title style="font-weight: bolder;">{{dress.shirt}}</ion-card-title>
+            <ion-card-subtitle style="font-size: 20px;">{{dress.color}}</ion-card-subtitle>
+            <label class="big" style="color: black;">{{dress.rate}}  <span>{{dress.rrate}}</span></label><br>
+            <label  class="big" style="color: black;">{{dress.discount}}</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+      <!-- <ion-card class="gary">
+        <ion-grid>
+          <ion-row>
+            <ion-col class="gary"> <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/3/x/f/-original-imagt853twnphqfa.jpeg?q=70" alt=""></ion-col>
+            <ion-col style="margin: 10px;">
+              <ion-card-title style="font-weight: bolder;">Mens shirts</ion-card-title>
+            <ion-card-subtitle class="big">white</ion-card-subtitle>
+            <label class="big">Rs.1999  <span>Rs.2999</span></label><br>
+            <label  class="big">61% off</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card> -->
+      </ion-content>
