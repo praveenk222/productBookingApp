@@ -1,4 +1,4 @@
-import { SearchPageModule } from './search/search.module';
+import { FolderPageModule } from './folder/folder.module';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { FolderPage } from './folder/folder.page';
@@ -6,16 +6,11 @@ import { TrackmyorderPage } from './home/trackmyorder/trackmyorder.page';
 import { SearchresultPage } from './home/searchresult/searchresult.page';
 import { ProductviewPage } from './home/productview/productview.page';
 
-const routes: Routes = [
-  
-      
-    
 
-];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+  
     RouterModule.forRoot([
       {
         path: '',
@@ -59,6 +54,18 @@ const routes: Routes = [
             path:'trackmyorder',
             loadChildren:() =>import('./home/trackmyorder/trackmyorder.module').then((m)=>m.TrackmyorderPageModule)
             
+          },
+          // {
+          //   path: 'wishlist',
+          //   loadChildren: () => import('./wishlist/wishlist.module').then((m) => m.WishlistPageModule),
+          // },
+          // {
+          //   path: 'my-bag',
+          //   loadChildren: () => import('./my-bag/my-bag.module').then((m) => m.MyBagPageModule),
+          // },
+          {
+            path: 'folder',
+            loadChildren: () => import('./folder/folder.module').then((m) => m.FolderPageModule),
           },
         ],
       },
