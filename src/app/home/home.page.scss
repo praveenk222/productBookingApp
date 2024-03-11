@@ -93,8 +93,8 @@
     flex: 1 0 0;
   }
   ion-icon{
-    width: 28px ;
-    height: 28px;
+    --width: 38px !important;
+    --height: 38px !important;
   }
 
   ion-header{
