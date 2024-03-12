@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-my-bag',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyBagPage implements OnInit {
   itemCount:number=0;
-  constructor() { }
+  constructor(private cart:CartService) { }
 
   ngOnInit() {
     alert()
@@ -27,5 +28,8 @@ export class MyBagPage implements OnInit {
   }
   parseToInt(value: string): number {
     return parseInt(value, 10); 
+  }
+  getItems(){
+   this.baglist=this.cart.getItems()
   }
 }

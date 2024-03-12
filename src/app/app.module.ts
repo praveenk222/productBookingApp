@@ -19,10 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    FolderPage,
+    FolderPage
   ],
-
-
   imports: [
     BrowserModule, 
     IonicModule.forRoot(),  
@@ -41,4 +39,6 @@ import { ReactiveFormsModule } from '@angular/forms';
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule {}
+export class AppModule {
+  
+}

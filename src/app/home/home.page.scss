@@ -9,12 +9,10 @@
     font-weight: 800;
     margin-left: 6px;
   }
-  
   swiper-container {
     width: 100%;
     height: 30%;
   }
-   
   swiper-slide {
     display: flex;
     flex-direction: column;
@@ -74,4 +72,13 @@
   }
   button{
     background: none;
+  }
+  ion-header,ion-toolbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  ion-toolbar>ion-icon{
+     padding-left: 10px;
   }

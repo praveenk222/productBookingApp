@@ -23,9 +23,7 @@ import { ListBySubcategoryComponent } from './list-by-subcategory/list-by-subcat
     SharedModule,
     FolderPageRoutingModule,
   ],
-  declarations: [
-    FolderPage,
-    
+  declarations: [ 
     ListComponent,
     BasketComponent,
     ListBySubcategoryComponent

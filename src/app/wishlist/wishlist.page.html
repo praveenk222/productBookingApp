@@ -13,7 +13,7 @@
       <ion-label>{{wish.discount}}% OFF</ion-label>
      </ion-card-content>
    <div class="vertical-align-end">
-    <ion-button color="dark" >Add to Bag</ion-button>
+    <ion-button color="dark" (click)="addCart(wish.id)">Add to Bag</ion-button>
    </div>
   </ion-card>
 </ion-content>

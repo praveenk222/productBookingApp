@@ -7,6 +7,7 @@ import { WishlistPage } from './wishlist/wishlist.page';
 import { ProfilePage } from './profile/profile.page';
 import { MyBagPage } from './my-bag/my-bag.page';
 import { MobilenoSignupPage } from './mobileno-signup/mobileno-signup.page';
+import { HomePage } from './home/home.page';
 
 const routes: Routes = [
 
@@ -15,9 +16,12 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
     RouterModule.forRoot([
-      
       {
-        path: '',
+       path:'',
+       component:HomePage
+      },
+      {
+        path: 'folder',
         component: FolderPage,
         children: [
           {
