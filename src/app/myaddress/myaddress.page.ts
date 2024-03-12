@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyaddressPage implements OnInit {
 
-  constructor() { }
+  constructor() {alert() }
 
   ngOnInit() {
   }

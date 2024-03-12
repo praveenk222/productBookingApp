@@ -1,3 +1,4 @@
+import { FolderPageModule } from './folder/folder.module';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { FolderPage } from './folder/folder.page';

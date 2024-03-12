@@ -10,6 +10,7 @@ export class MyBagPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    alert()
   }
   baglist=[
     {bagImg:'../../assets/jeans.webp',type:'Men Jeans',price:'1999',color:'Grey',size:'L'},

@@ -4,7 +4,6 @@ import { Component, ElementRef, HostListener, OnInit, ViewChild, inject } from '
 import { Router } from '@angular/router';
 import { IonContent, NavController } from '@ionic/angular';
 import { BookingService } from 'src/Services/booking.service';
-import { UserData } from 'src/providers/user-data';
 import { register } from 'swiper/element/bundle';
 register();
 import { Geolocation, GeolocationPlugin } from '@capacitor/geolocation';
@@ -40,35 +39,15 @@ export class AppComponent {
   azimageUrl:any='https://everdevuat.blob.core.windows.net/hubs/';
   profileUrl:any='https://everdevuat.blob.core.windows.net/profilepic/';
   isModelOpen=false;
-  ;
   
   
-    constructor(private _bh:BookingService,private element: ElementRef,private userdata: UserData,private http:HttpClient,private route:Router,
+  
+    constructor(private _bh:BookingService,private element: ElementRef,
+      private http:HttpClient,private route:Router,
       // private authService: SocialAuthService, 
       public navCtrl: NavController ) {
-      this.userdata.getuser().then((res:any) => {
-        if (res !== null) {
-  
-          this.logindata = res;
-          console.log(this.logindata )
-          this.username = res.FirstName + ' ' + res.LastName;
-       
-        }
-      })
-      this.userdata.getId('userlocation').then((res:any) => {
-        if (res !== null) {
-  
-          this.useraddress = res;
-          console.log(this.useraddress)
-        }
-      })
-      this.userdata.getuser().then(res => {
-        if (res !== null) {
-  
-          this.logindata = res;
-          this.route.navigateByUrl('/book')
-        }
-        })
+   
+ 
   
     }
     ngOnInit() {
