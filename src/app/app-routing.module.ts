@@ -5,17 +5,16 @@ import { MyaddressPage } from './myaddress/myaddress.page';
 import { WishlistPage } from './wishlist/wishlist.page';
 import { ProfilePage } from './profile/profile.page';
 import { MyBagPage } from './my-bag/my-bag.page';
+import { MobilenoSignupPage } from './mobileno-signup/mobileno-signup.page';
 
 const routes: Routes = [
-
-
 
 ];
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
     RouterModule.forRoot([
-     
+      
       {
         path: '',
         component: FolderPage,
@@ -60,6 +59,10 @@ const routes: Routes = [
           {
             path: 'my-bag',
             loadChildren: () => import('./my-bag/my-bag.module').then((m) => m.MyBagPageModule),
+          },
+          {
+            path: 'mobileno-signup',
+            loadChildren: () => import('./mobileno-signup/mobileno-signup.module').then((m) => m.MobilenoSignupPageModule),
           },
         ],
       },

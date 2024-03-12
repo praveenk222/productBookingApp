@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  .input-container, .button-container {
+    margin: 10px; 
+    width: 100%;
+  }
+  ion-button{
+    height: 50px;
+    width: 100%;
+  }
+  ion-input{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #d1caca;
+  }
+  ion-input{
+    box-shadow: 0 0 0 2px #222; 
+}
+.has-focus {
+      box-shadow: 0 0 0 2px blue; 
+}
+
+
+
+  
+
+    

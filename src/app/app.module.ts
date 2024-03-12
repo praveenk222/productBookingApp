@@ -15,6 +15,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 import { SharedModule } from 'src/shared/shared.module';
 import { FolderPage } from './folder/folder.page';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import { FolderPage } from './folder/folder.page';
     HttpClientModule,
     IonicStorageModule.forRoot({ name: "mylocaldb" }),
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },MatDatepickerModule,
     { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 3000 ,    horizontalPosition: 'end',
