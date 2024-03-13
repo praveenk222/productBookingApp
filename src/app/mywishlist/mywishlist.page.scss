@@ -1,0 +1,44 @@
+ion-header{
+    display: flex;align-items: center;padding-block: 10px;
+}
+ion-card{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr ;
+    padding: 15px;
+    position: relative;
+}
+img{
+    width: 130px;
+    height: 100%;
+}
+ion-button{
+    height: 50px;
+    font-size: 12px;
+}
+ion-label{
+    display: block;
+    padding-block: 5px;
+}
+.vertical-align-end {
+   position: absolute;
+   bottom: 15px;
+   right: 10px;
+}
+ion-label:nth-child(1){
+    font-size: 1rem;
+    font-weight: 700;
+    color: #111;
+}
+ion-label:nth-child(3),ion-label:nth-child(4){
+    color: #111;
+    font-weight: 700;
+}
+span{
+    text-decoration: line-through;
+    font-weight: 300;
+}
+ion-icon{
+    font-size: 1.6rem;
+    padding-left: 10px;
+}
+ 

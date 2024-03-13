@@ -1,0 +1,78 @@
+<ion-content>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>search</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">search</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+<mat-vertical-stepper [linear]="false" #stepper >
+  <mat-step [stepControl]="firstFormGroup">
+  Address
+  <ion-list>
+    <ion-item>
+      <ion-input aria-label="Enter your address" value=""></ion-input>
+    </ion-item>
+  </ion-list>
+</mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Books</ion-card-title>
+        <ion-card-subtitle>Booking Id</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </ion-thumbnail>
+            <ion-label>Item</ion-label>
+          </ion-item>
+    
+        
+    
+        
+    
+       
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Card Title</ion-card-title>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </ion-thumbnail>
+            <ion-label>Item</ion-label>
+          </ion-item>
+    
+         
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+    <div>
+  
+    </div>
+  </mat-step>
+</mat-vertical-stepper>
+<ion-button>Go to homePage</ion-button>
+</ion-content>
+
+
+

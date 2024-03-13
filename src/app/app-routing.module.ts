@@ -55,10 +55,10 @@ import { ProductviewPage } from './home/productview/productview.page';
             loadChildren:() =>import('./home/trackmyorder/trackmyorder.module').then((m)=>m.TrackmyorderPageModule)
             
           },
-          // {
-          //   path: 'wishlist',
-          //   loadChildren: () => import('./wishlist/wishlist.module').then((m) => m.WishlistPageModule),
-          // },
+          {
+            path: 'wishlist',
+            loadChildren: () => import('./mywishlist/mywishlist.module').then((m) => m.MywishlistPageModule),
+          },
           {
             path: 'mybag',
             loadChildren: () => import('./mybag/mybag.module').then((m) => m.MybagPageModule),
@@ -66,6 +66,10 @@ import { ProductviewPage } from './home/productview/productview.page';
           {
             path: 'folder',
             loadChildren: () => import('./folder/folder.module').then((m) => m.FolderPageModule),
+          },
+          {
+            path: 'payment',
+            loadChildren: () => import('./payment/payment.module').then((m) => m.PaymentPageModule),
           },
         ],
       },
