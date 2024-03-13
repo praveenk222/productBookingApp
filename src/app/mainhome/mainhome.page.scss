@@ -4,7 +4,7 @@
     align-items: center;
     gap: 10px;
     padding: 10px;
-    background-color: #AED6F1 ;
+    background-color: #369 ;
     color: #fff;
 }
 ion-avatar>ion-icon{
@@ -101,4 +101,7 @@ ion-label:nth-child(2),h6{
     justify-content: space-between;
     align-items: center;
     padding-inline: 10px;
+}
+.examples-spacer{
+    flex: 1 0 0;
 }

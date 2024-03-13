@@ -25,11 +25,11 @@ const routes: Routes = [
         path: '',
         component: FolderPage,
         children: [
-          // {
-          //   path: '',
-          //   pathMatch: 'full',
-          //   redirectTo: 'home',
-          // },
+          {
+            path: '',
+            pathMatch: 'full',
+            redirectTo: 'Mainhome',
+          },
           {
             path: 'home',
             loadChildren: () => import('./home/home.module').then((m) => m.HomePageModule),
