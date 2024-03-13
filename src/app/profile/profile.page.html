@@ -1,6 +1,6 @@
 <ion-content>
   <ion-header >
-    <ion-icon name="arrow-back-outline"></ion-icon>
+    <ion-icon name="arrow-back-outline" routerLink="/home"></ion-icon>
   <ion-title>My Profile</ion-title>
 </ion-header>
 <ion-card cololr="light">
@@ -21,13 +21,15 @@
     <ion-label>name123&#64;gmail.com</ion-label>
   </div>
 </ion-card>
+
 <table>
-  <tbody *ngFor="let list of  profileList">
-    <tr>
+  <tbody *ngFor="let list of  profileList" >
+    <tr routerLink="{{list.link}}">
       <td><ion-icon [name]="list.icon1" ></ion-icon></td>
       <td>{{list.listname}}</td>
       <td><ion-icon name="chevron-forward-outline"></ion-icon></td>
     </tr>
   </tbody>
 </table>
+
 </ion-content>
