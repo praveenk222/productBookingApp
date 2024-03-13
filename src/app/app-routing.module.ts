@@ -8,6 +8,7 @@ import { ProfilePage } from './profile/profile.page';
 import { MyBagPage } from './my-bag/my-bag.page';
 import { MobilenoSignupPage } from './mobileno-signup/mobileno-signup.page';
 import { HomePage } from './home/home.page';
+import { MainhomePage } from './mainhome/mainhome.page';
 
 const routes: Routes = [
 
@@ -18,7 +19,7 @@ const routes: Routes = [
     RouterModule.forRoot([
       {
        path:'',
-       component:HomePage
+       component:MainhomePage
       },
       {
         path: 'folder',
@@ -68,6 +69,10 @@ const routes: Routes = [
           {
             path: 'mobileno-signup',
             loadChildren: () => import('./mobileno-signup/mobileno-signup.module').then((m) => m.MobilenoSignupPageModule),
+          },
+          {
+            path: 'mainhome',
+            loadChildren: () => import('./mainhome/mainhome.module').then((m) => m.MainhomePageModule),
           },
         ],
       },

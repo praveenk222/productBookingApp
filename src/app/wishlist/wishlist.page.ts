@@ -8,8 +8,9 @@ import { CartService } from '../services/cart.service';
 })
 export class WishlistPage implements OnInit {
 
-  constructor(private cart:CartService) { }
-
+  constructor(private cart:CartService) {
+    
+   }
   ngOnInit() {
   }
   wishlist = [
@@ -20,7 +21,6 @@ export class WishlistPage implements OnInit {
     const item = this.wishlist.find(wish => wish.id === id);
     if (item) {
       this.cart.addItem(item.wishImg);
-      console.log('Item added to cart:', item.wishImg);
     }
   }
 }
