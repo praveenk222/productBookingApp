@@ -19,7 +19,7 @@ const routes: Routes = [
     RouterModule.forRoot([
       {
        path:'',
-       component:MainhomePage
+       component:MyBagPage
       },
       {
         path: 'folder',
