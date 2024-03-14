@@ -1,16 +1,18 @@
 <ion-toolbar>
    <div class="container">
-    <ion-avatar>
+    <!-- <ion-avatar> -->
       <!-- <img src="" alt=""> -->
-   <ion-icon name="person-outline" ></ion-icon>
-   </ion-avatar>
+   <!-- <ion-icon name="person-outline" ></ion-icon> -->
+   <!-- </ion-avatar> -->
  <span>
-   <ion-label>Hi,guest</ion-label> <br>
+   <ion-label>Hi,Narendra</ion-label> <br>
    <ion-label>
-     <ion-icon name="location-outline"></ion-icon>
-      <span>500090,Hyderbad</span>
+    <span>
+     <!-- <ion-icon name="location-outline"></ion-icon> -->
+     500090,Hyderbad</span>
    </ion-label>
  </span>
+ <span class="example-spacer"></span>
  <div class="func-container">
    <ion-icon name="search-outline"></ion-icon>
    <ion-icon name="bag-handle-outline"></ion-icon>
@@ -54,12 +56,12 @@
       <ion-label>{{ bag.quantity}}ml</ion-label>
      <div class="sub-container">
       <ion-button color="light">+ BUY ONCE</ion-button>
-      <ion-button color="success">SUBSCRIBE</ion-button>
+      <!-- <ion-button color="success">SUBSCRIBE</ion-button> -->
      </div>
      </ion-card-content>
      
   </ion-card>
-  <ion-card *ngFor="let bag of  baglist" class="btm-fix" color="success">
+  <!-- <ion-card *ngFor="let bag of  baglist" class="btm-fix" color="success">
     <ion-avatar style="background-color: rgb(11, 212, 11);">
       <ion-icon name="bag-handle-outline"></ion-icon>
    </ion-avatar> 
@@ -68,5 +70,5 @@
       <ion-label>1 item(s) in bag</ion-label>
     </ion-card-content>
     <ion-label style="display: flex;align-items: center;gap: 10px; "><span>View</span> <ion-icon name="arrow-forward-outline"></ion-icon></ion-label>
-  </ion-card>
+  </ion-card> -->
 </ion-content>

@@ -15,8 +15,12 @@ const routes: Routes = [
 ];
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+
     RouterModule.forRoot([
+      // {
+      //  path:'',
+      //  component:MainhomePage
+      // },
       {
        path:'',
        component:MyBagPage
@@ -28,7 +32,7 @@ const routes: Routes = [
           {
             path: '',
             pathMatch: 'full',
-            redirectTo: 'home',
+            redirectTo: 'Mainhome',
           },
           {
             path: 'home',
@@ -73,6 +77,31 @@ const routes: Routes = [
           {
             path: 'mainhome',
             loadChildren: () => import('./mainhome/mainhome.module').then((m) => m.MainhomePageModule),
+          },
+          {
+            path: 'myorders',
+            loadChildren: () => import('./myorders/myorders.module').then((m) => m.MyordersPageModule),
+          },
+          {
+            path: 'manageaccount',
+            loadChildren: () => import('./manageaccount/manageaccount.module').then((m) => m.ManageaccountPageModule),
+          },
+          {
+            path: 'bookswise',
+            loadChildren: () => import('./bookswise/bookswise-routing.module').then((m) => m.BookswisePageRoutingModule),
+          },
+          {
+            path: 'payments',
+            loadChildren: () => import('./payments/payments.module').then((m) => m.PaymentsPageModule),
+          },
+          
+          {
+            path: 'helpcenter',
+            loadChildren: () => import('./helpcenter/helpcenter.module').then((m) => m.HelpcenterPageModule),
+          },
+          {
+            path: 'coupans',
+            loadChildren: () => import('./coupans/coupans.module').then((m) => m.CoupansPageModule),
           },
         ],
       },
