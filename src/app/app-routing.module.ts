@@ -9,6 +9,7 @@ import { MyBagPage } from './my-bag/my-bag.page';
 import { MobilenoSignupPage } from './mobileno-signup/mobileno-signup.page';
 import { HomePage } from './home/home.page';
 import { MainhomePage } from './mainhome/mainhome.page';
+import { ViewallPage } from './viewall/viewall.page';
 
 const routes: Routes = [
 
@@ -17,13 +18,9 @@ const routes: Routes = [
   imports: [
 
     RouterModule.forRoot([
-      // {
-      //  path:'',
-      //  component:MainhomePage
-      // },
       {
-       path:'',
-       component:MyBagPage
+        path:'',
+        component:ViewallPage
       },
       {
         path: 'folder',
@@ -102,6 +99,10 @@ const routes: Routes = [
           {
             path: 'coupans',
             loadChildren: () => import('./coupans/coupans.module').then((m) => m.CoupansPageModule),
+          },
+          {
+            path: 'viewall',
+            loadChildren: () => import('./viewall/viewall.module').then((m) => m.ViewallPageModule),
           },
         ],
       },
