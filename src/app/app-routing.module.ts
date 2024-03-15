@@ -10,6 +10,7 @@ import { MobilenoSignupPage } from './mobileno-signup/mobileno-signup.page';
 import { HomePage } from './home/home.page';
 import { MainhomePage } from './mainhome/mainhome.page';
 import { ViewallPage } from './viewall/viewall.page';
+import { PaymentsPage } from './payments/payments.page';
 
 const routes: Routes = [
 
@@ -18,10 +19,6 @@ const routes: Routes = [
   imports: [
 
     RouterModule.forRoot([
-      {
-        path:'',
-        component:ViewallPage
-      },
       {
         path: 'folder',
         component: FolderPage,
