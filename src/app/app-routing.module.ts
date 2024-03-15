@@ -5,6 +5,7 @@ import { FolderPage } from './folder/folder.page';
 import { TrackmyorderPage } from './home/trackmyorder/trackmyorder.page';
 import { SearchresultPage } from './home/searchresult/searchresult.page';
 import { ProductviewPage } from './home/productview/productview.page';
+import { LoginPage } from './login/login.page';
 
 
 
@@ -14,16 +15,20 @@ import { ProductviewPage } from './home/productview/productview.page';
     RouterModule.forRoot([
       {
         path: '',
-        component:FolderPage,
+        component:LoginPage,
         children: [
           {
             path: '',
             pathMatch: 'full',
-            redirectTo: 'home',
+            redirectTo: 'login',
           },
           {
             path: 'home',
             loadChildren: () => import('./home/home.module').then((m) => m.HomePageModule),
+          },
+          {
+            path: 'login',
+            loadChildren: () => import('./login/login.module').then((m) => m.LoginPageModule),
           },
           {
             path: 'radio',

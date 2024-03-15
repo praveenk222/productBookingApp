@@ -3,13 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { FolderPage } from './folder.page';
 import { HomePage } from '../home/home.page';
+import { LoginPage } from '../login/login.page';
 // import { ListBySubcategoryComponent } from './list-by-subcategory/list-by-subcategory.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: HomePage,
+    component: LoginPage,
   },
   // {
   //   path: 'list',
