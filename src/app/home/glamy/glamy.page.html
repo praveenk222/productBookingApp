@@ -1,0 +1,26 @@
+<ion-content>
+<ion-header [translucent]="true">
+  <ion-menu-button></ion-menu-button>
+ <ion-title style="text-align: end;font-size: 30px;">GLAMY</ion-title> 
+ <ion-icon name="notifications-outline"></ion-icon>
+ <ion-icon name="heart-outline"></ion-icon>
+ <ion-icon name="bag-remove-outline"></ion-icon>
+</ion-header>
+<ion-searchbar placeholder="Search"></ion-searchbar>
+<swiper-container
+        #swiper
+        (afterinit)="swiperReady()"
+        (slidechange)="swiperSlideChanged($event)"
+        [loop]="true"
+        [zoom]="true" slides-per-view="4.5">
+  
+        <swiper-slide *ngFor="let image of images">
+          <div class="swiper-zoom-container">
+            <img class="newest-img" [src]="image.img"/> 
+          </div>
+          <div>
+            <label for="" >{{image.name}}</label>
+          </div>
+        </swiper-slide>
+      </swiper-container>
+</ion-content>

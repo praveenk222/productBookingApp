@@ -20,6 +20,44 @@
             </div>
           </swiper-slide>
         </swiper-container>
-        <ion-icon name="bookmark" (click)="toggleBookmark()"></ion-icon>
-        
+        <ion-icon name="bookmark" style="margin:0 30px ;"></ion-icon>
+        <ion-icon name="bookmark-outline" style="margin:0 0px ;"></ion-icon><br>
+         <ion-label style="font-weight: 1000;">Maroon Red</ion-label><br>
+         <ion-label>Mens Shirts</ion-label><br>
+         <ion-label style="font-weight: 1000;">{{ getPriceWithSymbol() }}<span>(40% Off)</span></ion-label><br>
+         
+         <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-label style="font-size: large;">Avaliable Colors</ion-label><br>
+              <ion-button class="circle-button" style="--background: black;margin: 20px"></ion-button>
+              <ion-button class="circle-button" style="--background: maroon;margin: 20px"></ion-button>
+              <ion-button class="circle-button" style="--background: white;margin: 20px"></ion-button>
+              <ion-button class="circle-button" style="--background: beige;margin: 20px"></ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-label style="font-weight: 1000;">Select Size</ion-label><br>
+              <ion-button class="circle-color">S</ion-button>
+              <ion-button class="circle-color">M</ion-button>
+              <ion-button class="circle-color">L</ion-button>
+              <ion-button class="circle-color">XL</ion-button>
+              <ion-button class="circle-color">XXL</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-button class="fixed-button">Wishlist</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button class="fixed-left">Add To Bag</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
       </ion-content>
+      

@@ -1,0 +1,27 @@
+ion-header{
+    display: flex;
+    align-items: center; 
+}
+ion-icon{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.segment-button{
+    margin: 20px 10px;
+    height: 40px;
+    width: 390px;
+}
+ion-segment {
+    border-radius: 15px;
+    background-color: #f0f0f0;
+  }
+  
+  ion-segment-button {
+    color: black;
+  }
+  
+  ion-segment-button::after {
+    background-color: black;
+  }

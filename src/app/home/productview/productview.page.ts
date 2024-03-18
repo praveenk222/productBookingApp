@@ -9,6 +9,11 @@ import { Swiper } from 'swiper';
   styleUrls: ['./productview.page.scss'],
 })
 export class ProductviewPage implements OnInit {
+  price: number = 650;
+
+  getPriceWithSymbol(): string {
+    return `₹${this.price}`;
+  }
   public device:string="";
  constructor(){ }
  slides:any[]=[]
@@ -43,15 +48,5 @@ onIonInfinite(ev:any) {
     (ev as InfiniteScrollCustomEvent).target.complete();
   }, 500);
 }
-
-isBookmarked: boolean = false;
-
-  toggleBookmark() {
-    this.isBookmarked = !this.isBookmarked;
-    if (this.isBookmarked) {
-      console.log('Bookmark added');
-    } else {
-      console.log('Bookmark removed');
-    }
-  }
+  
 }

@@ -46,7 +46,7 @@
     "cordova-plugin-navigationbar-color": "^0.1.0",
     "google-maps": "^4.3.3",
     "ionic-stepper": "^1.1.0",
-    "ionicons": "^7.0.0",
+    "ionicons": "^7.2.2",
     "ng-otp-input": "^1.9.3",
     "ngx-bootstrap": "^12.0.0",
     "rxjs": "~7.8.0",

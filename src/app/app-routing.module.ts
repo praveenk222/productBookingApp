@@ -4,28 +4,17 @@ import { FolderPage } from './folder/folder.page';
 import { TrackmyorderPage } from './home/trackmyorder/trackmyorder.page';
 import { SearchresultPage } from './home/searchresult/searchresult.page';
 import { ProductviewPage } from './home/productview/productview.page';
+import { NotificationPage } from './home/notification/notification.page';
+import { SignupPage } from './home/signup/signup.page';
+import { GlamyPage } from './home/glamy/glamy.page';
 
 const routes: Routes = [
-
-
 
 ];
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+
     RouterModule.forRoot([
-      {
-        path:'',
-        component:ProductviewPage
-      },
-      {
-        path:'searchresult',
-        component:SearchresultPage
-      },
-      {
-        path:'trackmyorder',
-        component:TrackmyorderPage
-      },
       {
         path: 'folder',
         component: FolderPage,
@@ -33,7 +22,7 @@ const routes: Routes = [
           {
             path: '',
             pathMatch: 'full',
-            redirectTo: 'home',
+            redirectTo: 'Mainhome',
           },
           {
             path: 'home',
@@ -55,11 +44,11 @@ const routes: Routes = [
             path: 'swap',
             loadChildren: () => import('./swap/swap.module').then((m) => m.SwapPageModule),
           },
+          
         ],
       },
     ]),
   ],
-
   exports: [RouterModule]
 })
 

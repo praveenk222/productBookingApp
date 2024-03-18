@@ -13,7 +13,8 @@ const routes: Routes = [
   {
     path:'product',
     component:ProductDetailsComponent
-  },  {
+  },
+  {
     path: 'trackmyorder',
     loadChildren: () => import('./trackmyorder/trackmyorder.module').then( m => m.TrackmyorderPageModule)
   },
@@ -24,6 +25,18 @@ const routes: Routes = [
   {
     path: 'productview',
     loadChildren: () => import('./productview/productview.module').then( m => m.ProductviewPageModule)
+  },
+  {
+    path: 'notification',
+    loadChildren: () => import('./notification/notification.module').then( m => m.NotificationPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
+  },
+  {
+    path: 'glamy',
+    loadChildren: () => import('./glamy/glamy.module').then( m => m.GlamyPageModule)
   }
 
 ];

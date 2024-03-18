@@ -15,11 +15,12 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 import { SharedModule } from 'src/shared/shared.module';
 import { FolderPage } from './folder/folder.page';
+import {MatStepperModule} from '@angular/material/stepper';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FolderPage
+    FolderPage,
   ],
 
 
@@ -31,6 +32,7 @@ import { FolderPage } from './folder/folder.page';
     HttpClientModule,
     IonicStorageModule.forRoot({ name: "mylocaldb" }),
     BrowserAnimationsModule,
+    MatStepperModule
     ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },MatDatepickerModule,
     { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 3000 ,    horizontalPosition: 'end',

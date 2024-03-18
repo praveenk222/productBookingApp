@@ -1,0 +1,19 @@
+<ion-content>
+<ion-header [translucent]="true">
+  <ion-icon name="arrow-back-circle"></ion-icon>
+  <h1>Sign Up</h1>
+</ion-header>
+<ion-card *ngFor="let logo of logos">
+  <ion-card-header>
+    <img [src]="logo.image" alt="google logos">
+    <a [href]="logo.link">{{logo.site}}</a>
+  </ion-card-header>
+</ion-card>
+<label for="">Or</label>
+<ion-card *ngFor="let call of calls">
+  <ion-card-header>
+    <img [src]="call.image" alt="google logos">
+    <a [href]="call.link">{{call.site}}</a>
+  </ion-card-header>
+</ion-card>
+</ion-content>

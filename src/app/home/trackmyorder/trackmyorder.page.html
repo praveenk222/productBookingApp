@@ -14,8 +14,21 @@
       <ion-label>Order Number # 98765432199/5</ion-label><br>
       <ion-label >Customer Name : Sneha Gadkar</ion-label><br>  
       <ion-label >Payment Mode : Cash On Delivery</ion-label>
-      <ion-card color="medium" class="card1"> 
+      <ion-card class="card1"> 
+        <mat-vertical-stepper [linear]="false" >
+          <mat-step [stepControl]="firstFormGroup">Order <br> Placed <br>7:30pm <br> 15 mar 2024
+          </mat-step>
+          <mat-step [stepControl]="secondFormGroup">Shipped <br> 11:30am <br> 20 mar 2024
+          </mat-step>
+          <mat-step [stepControl]="thirdFormGroup"> Out for <br> Delivery <br> 11:30am <br>20 mar 2024
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>Delivered</ng-template>
+          </mat-step>
+        </mat-vertical-stepper>
       </ion-card>
+      
+      
       
       <ion-card class="gary" *ngFor="let dress of dresses">
         <ion-grid>
@@ -30,17 +43,5 @@
           </ion-row>
         </ion-grid>
       </ion-card>
-      <!-- <ion-card class="gary">
-        <ion-grid>
-          <ion-row>
-            <ion-col class="gary"> <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/3/x/f/-original-imagt853twnphqfa.jpeg?q=70" alt=""></ion-col>
-            <ion-col style="margin: 10px;">
-              <ion-card-title style="font-weight: bolder;">Mens shirts</ion-card-title>
-            <ion-card-subtitle class="big">white</ion-card-subtitle>
-            <label class="big">Rs.1999  <span>Rs.2999</span></label><br>
-            <label  class="big">61% off</label>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </ion-card> -->
+      
       </ion-content>
