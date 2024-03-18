@@ -20,7 +20,7 @@ const routes: Routes = [
     RouterModule.forRoot([
       {
         path: '',
-        component:LoginPage
+        component:ConfirmorderPage
       },
       {
         path: 'folder',
