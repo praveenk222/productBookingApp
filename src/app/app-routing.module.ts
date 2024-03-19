@@ -64,16 +64,8 @@ const routes: Routes = [
             loadChildren: () => import('./login/login.module').then((m) => m.LoginPageModule),
           },
           {
-            path: 'splashscreen1',
-            loadChildren: () => import('./splashscreen1/splashscreen1.module').then((m) => m.Splashscreen1PageModule),
-          },
-          {
             path: 'splashscreen2',
             loadChildren: () => import('./splashscreen2/splashscreen2.module').then((m) => m.Splashscreen2PageModule),
-          },
-          {
-            path: 'splashscreen3',
-            loadChildren: () => import('./splashscreen3/splashscreen3.module').then((m) => m.Splashscreen3PageModule),
           },
 
         ],
