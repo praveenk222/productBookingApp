@@ -21,7 +21,7 @@ const routes: Routes = [
     RouterModule.forRoot([
      
       {
-        path: 'folder',
+        path: '',
         component: FolderPage,
         children: [
           {
