@@ -31,10 +31,10 @@ export class MainhomePage implements OnInit {
   }
   categories=[
      {image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKbxkM9sqO36bCwMVRXis6VDuJpYeOqscVzg&usqp=CAU',title:'All'},
-     {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvtR3s3NfpIvx67wQuhLQvRdyEKN0KL0yb7Q&usqp=CAU',title:'organic milk'},
-     {image:'https://elworldorganic.com/wp-content/uploads/2022/06/A2-Desi-Cow-Ghee-1.jpg',title:'organic ghee'} ,
-     {image:'https://m.media-amazon.com/images/I/71eftr9IdFL.jpg',title:'curd'} ,
-     {image:'https://m.media-amazon.com/images/I/81j62n0fr-L._AC_UF1000,1000_QL80_.jpg',title:'butter milk'} 
+     {image:'https://i.pinimg.com/736x/82/76/bc/8276bc90ad2aeeea6ea823bd2bc81118.jpg',title:'fiction'},
+     {image:'https://authority.pub/wp-content/uploads/2020/09/17.png',title:'genere'} ,
+     {image:'https://i5.walmartimages.com/asr/0ea6502b-4cb2-4176-bfbf-63d0cb845909_1.77f6a15dcfb606189b287b4e156ec141.jpeg',title:'novel'} ,
+     {image:'https://m.media-amazon.com/images/I/81j62n0fr-L._AC_UF1000,1000_QL80_.jpg',title:'horror'} 
   ]
   baglist=[
     {bagImg:'../../assets/jeans.webp',bName:'Akshayakalpa',price:'25',title:'Organic Slim milk',quantity:'500'},

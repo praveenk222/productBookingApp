@@ -17,10 +17,7 @@ const routes: Routes = [
   imports: [
 
     RouterModule.forRoot([
-      // {
-      //  path:'',
-      //  component:MainhomePage
-      // },
+     
       {
         path: '',
         component: FolderPage,
@@ -28,7 +25,7 @@ const routes: Routes = [
           {
             path: '',
             pathMatch: 'full',
-            redirectTo: 'Mainhome',
+            redirectTo: 'home',
           },
           {
             path: 'home',
@@ -99,6 +96,13 @@ const routes: Routes = [
             path: 'coupans',
             loadChildren: () => import('./coupans/coupans.module').then((m) => m.CoupansPageModule),
           },
+          {
+            path: 'checkout',
+            loadChildren: () => import('./checkout/checkout.module').then((m) => m.CheckoutPageModule),
+          },
+      
+          
+          
         ],
       },
     ]),
