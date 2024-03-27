@@ -20,7 +20,7 @@ import { LoginPage } from './login/login.page';
           {
             path: '',
             pathMatch: 'full',
-            redirectTo: 'login',
+            redirectTo: 'home',
           },
           {
             path: 'home',
