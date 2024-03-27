@@ -9,6 +9,8 @@ import { MyBagPage } from './my-bag/my-bag.page';
 import { MobilenoSignupPage } from './mobileno-signup/mobileno-signup.page';
 import { HomePage } from './home/home.page';
 import { MainhomePage } from './mainhome/mainhome.page';
+import { ViewallPage } from './viewall/viewall.page';
+import { PaymentsPage } from './payments/payments.page';
 
 const routes: Routes = [
 
@@ -19,7 +21,7 @@ const routes: Routes = [
     RouterModule.forRoot([
      
       {
-        path: '',
+        path: 'folder',
         component: FolderPage,
         children: [
           {
@@ -102,7 +104,10 @@ const routes: Routes = [
           },
       
           
-          
+          {
+            path: 'viewall',
+            loadChildren: () => import('./viewall/viewall.module').then((m) => m.ViewallPageModule),
+          },
         ],
       },
     ]),

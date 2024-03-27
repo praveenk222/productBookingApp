@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mainhome',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainhomePage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) {}
 
   imageSlider!: NodeListOf<Element>;
   currentSlide = 0;
@@ -40,5 +41,5 @@ export class MainhomePage implements OnInit {
     {bagImg:'../../assets/jeans.webp',bName:'Akshayakalpa',price:'25',title:'Organic Slim milk',quantity:'500'},
     {bagImg:'../../assets/wishWatch.webp',bName:'Akshayakalpa',price:'35',title:'Organic Slim milk',quantity:'1000'},
   ]
-  
+ 
 }

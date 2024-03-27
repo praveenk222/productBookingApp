@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-
+import {MatTabsModule} from '@angular/material/tabs';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
@@ -19,7 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    FolderPage
+    FolderPage,
   ],
   imports: [
     BrowserModule, 
@@ -31,6 +31,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     IonicStorageModule.forRoot({ name: "mylocaldb" }),
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    MatTabsModule
     ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },MatDatepickerModule,
     { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 3000 ,    horizontalPosition: 'end',
