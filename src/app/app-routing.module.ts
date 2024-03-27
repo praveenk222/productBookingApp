@@ -8,10 +8,10 @@ import { ProductviewPage } from './home/productview/productview.page';
 import { LoginPage } from './login/login.page';
 
 
-import { MyaddressPage } from './myaddress/myaddress.page';
-import { WishlistPage } from './wishlist/wishlist.page';
-import { ProfilePage } from './profile/profile.page';
-import { MyBagPage } from './my-bag/my-bag.page';
+// import { MyaddressPage } from './myaddress/myaddress.page';
+// import { WishlistPage } from './wishlist/wishlist.page';
+// import { ProfilePage } from './profile/profile.page';
+// import { MyBagPage } from './my-bag/my-bag.page';
 import { MobilenoSignupPage } from './mobileno-signup/mobileno-signup.page';
 import { HomePage } from './home/home.page';
 import { MainhomePage } from './mainhome/mainhome.page';
@@ -88,21 +88,14 @@ const routes: Routes = []
             path: 'payment',
             loadChildren: () => import('./payment/payment.module').then((m) => m.PaymentPageModule),
           },
-          {
-            path: 'myaddress',
-            loadChildren: () => import('./myaddress/myaddress.module').then((m) => m.MyaddressPageModule),
-          },
-          {
-            path: 'profile',
-            loadChildren: () => import('./profile/profile.module').then((m) => m.ProfilePageModule),
-          },
+       
           {
             path: 'wishlist',
-            loadChildren: () => import('./wishlist/wishlist.module').then((m) => m.WishlistPageModule),
+            loadChildren: () => import('./mywishlist/mywishlist.module').then((m) => m.MywishlistPageModule),
           },
           {
             path: 'my-bag',
-            loadChildren: () => import('./my-bag/my-bag.module').then((m) => m.MyBagPageModule),
+            loadChildren: () => import('./mybag/mybag.module').then((m) => m.MybagPageModule),
           },
           {
             path: 'mobileno-signup',
