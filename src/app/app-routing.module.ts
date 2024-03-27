@@ -15,7 +15,7 @@ import { LoginPage } from './login/login.page';
     RouterModule.forRoot([
       {
         path: '',
-        component:LoginPage,
+        component:FolderPage,
         children: [
           {
             path: '',
