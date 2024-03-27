@@ -1,5 +1,20 @@
-
-  
+<!-- <ion-header [translucent]="true">
+ 
+    <ion-toolbar>
+      <ion-icon name="menu-outline"></ion-icon>
+    </ion-toolbar>
+    <ion-toolbar>
+      <ion-label>GLAMY</ion-label>
+    </ion-toolbar>
+   <ion-toolbar>
+    <ion-icon name="notifications-outline"></ion-icon>
+    <ion-icon name="heart-outline"></ion-icon>
+    <ion-icon name="bag-handle-outline"></ion-icon>
+   </ion-toolbar>
+ 
+</ion-header>
+<ion-content class="ion-padding">
+  <h1>Browse Book</h1>
   
 
   <ion-searchbar *ngIf="toggled" [(ngModel)]="searchTerm" [showCancelButton]="true" (ionCancel)="toggleSearch()" (ionInput)="triggerInput($event)"></ion-searchbar>
@@ -73,13 +88,25 @@
       (afterinit)="swiperReady()"
       (slidechange)="swiperSlideChanged($event)"
       [loop]="true"
-      [zoom]="true" slides-per-view="2.5">
-
-      <swiper-slide *ngFor="let image of images">
-        <div class="swiper-zoom-container" routerLink="product">
-          <img class="newest-img" [src]="image"/>
-        </div>
-      </swiper-slide>
+      [zoom]="true">
+  
+      <swiper-slide *ngFor="let card of cards"> -->
+        <!-- <div class="swiper-zoom-container">
+          <div class="card"  style="width: 350px;" > -->
+         
+            <!-- <img class="newest" [src]="card" alt=""> -->
+         
+            <!-- <ion-card style="width: 350px; height: 150px;">
+              <ion-grid>
+                <ion-row>
+                  <ion-col><img [src]="card" alt="" style="width: 100px;height: 130px; border-radius: 8px;"></ion-col>
+                  <ion-col style="font-size: 25px;">Books</ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card> -->
+        <!-- </div>
+        </div> -->
+      <!-- </swiper-slide>
     </swiper-container>
 
 
@@ -107,24 +134,81 @@
     </swiper-slide>
   </swiper-container>
 
+  </ion-content>
+   -->
 
-  <div class="anchor">
-    <h3>Last reviews</h3>
-   <ion-icon name="arrow-forward-circle"></ion-icon>
+
+   <ion-toolbar>
+    <div class="container">
+     <!-- <ion-avatar> -->
+       <!-- <img src="" alt=""> -->
+    <!-- <ion-icon name="person-outline" ></ion-icon> -->
+    <!-- </ion-avatar> -->
+  <span>
+    <ion-label>Hi,Narendra</ion-label> <br>
+    <ion-label>
+     <span>
+      <!-- <ion-icon name="location-outline"></ion-icon> -->
+      500090,Hyderbad</span>
+    </ion-label>
+  </span>
+  <span class="example-spacer"></span>
+  <div class="func-container">
+    <ion-icon name="search-outline"></ion-icon>
+    <ion-icon name="bag-handle-outline" routerLink="/checkout"></ion-icon>
+    <ion-icon name="heart-outline" routerLink="/wishlist"></ion-icon>
   </div>
-
-  <swiper-container 
-  #swiper
-  (afterinit)="swiperReady()"
-  (slidechange)="swiperSlideChanged($event)"
-  [loop]="true"
-  [zoom]="true" slides-per-view="2.5">
-
-  <swiper-slide *ngFor="let image of images">
-    <div class="swiper-zoom-container">
-      <img class="newest-img" [src]="image"/>
     </div>
-  </swiper-slide>
-</swiper-container>
-
-</ion-content>
+   
+ </ion-toolbar>
+ <ion-content>
+   <div class="carousel-container">
+     <div class="carousel" >
+       <img src="https://nypost.com/wp-content/uploads/sites/2/2021/07/romance-fiction-books.jpg?quality=90&strip=all "  alt="..." id="image">
+     </div>
+     <div class="carousel" >
+       <img src="https://www.52-insights.com/wp-content/uploads/2016/12/best-books-2016-promo.jpg"  alt="..." id="image">
+     </div>
+     <div class="carousel">
+       <img src="https://www.english-study-online.com/wordpress/wp-content/uploads/2019/04/ECFF9F3B-9C38-40E3-8FFF-E92708518FC0.jpeg"  alt="..." >
+     </div>
+   </div>
+ 
+ <div class="category">
+   <div class="cat-head">
+     <h6>CATEGORIES</h6>
+     <ion-label color="success">VIEW ALL</ion-label>
+   </div>
+   <div class="horizontal-scroll">
+     <ion-col size="3" *ngFor="let cat of categories">
+       <div class="cat-container">
+         <img [src]="cat.image" style="max-width: 100%; max-height: 100%;">
+         <ion-label>{{cat.title}}</ion-label>
+       </div>
+     </ion-col>
+ </div>
+ </div>
+   <ion-card *ngFor="let bag of  baglist" class="cardBag">
+     <img [src]="bag.bagImg" alt="">
+      <ion-card-content>
+       <ion-label>{{bag.bName}}</ion-label>
+       <ion-label><span>{{bag.title}}</span> <span style="padding-left: 20px; color: blue;float: right;"> {{bag.price | currency:'INR'}}</span></ion-label>
+       <ion-label>{{ bag.quantity}}ml</ion-label>
+      <div class="sub-container">
+       <ion-button color="light">+ BUY ONCE</ion-button>
+       <!-- <ion-button color="success">SUBSCRIBE</ion-button> -->
+      </div>
+      </ion-card-content>
+      
+   </ion-card>
+   <!-- <ion-card *ngFor="let bag of  baglist" class="btm-fix" color="success">
+     <ion-avatar style="background-color: rgb(11, 212, 11);">
+       <ion-icon name="bag-handle-outline"></ion-icon>
+    </ion-avatar> 
+     <ion-card-content>
+       <ion-label> {{bag.price | currency:'INR'}}.other charges</ion-label>
+       <ion-label>1 item(s) in bag</ion-label>
+     </ion-card-content>
+     <ion-label style="display: flex;align-items: center;gap: 10px; "><span>View</span> <ion-icon name="arrow-forward-outline"></ion-icon></ion-label>
+   </ion-card> -->
+ </ion-content>

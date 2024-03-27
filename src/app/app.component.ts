@@ -1,4 +1,12 @@
-import { Component } from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { HttpClient } from '@angular/common/http';
+import { Component, ElementRef, HostListener, OnInit, ViewChild, inject } from '@angular/core';
+import { Router } from '@angular/router';
+import { IonContent, NavController } from '@ionic/angular';
+import { BookingService } from 'src/Services/booking.service';
+import { register } from 'swiper/element/bundle';
+register();
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',

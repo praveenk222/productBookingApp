@@ -1,0 +1,11 @@
+<form [formGroup]="phoneValid" >
+  <div class="container">
+    <div class="input-container">
+      <ion-input placeholder="Enter your phone number" formControlName="phoneNumber"></ion-input>
+      <div *ngIf="phoneValid.get('phoneNumber')?.invalid && (phoneValid.get('phoneNumber')?.dirty || phoneValid.get('phoneNumber')?.touched)">
+          Phone number is required.
+      </div>
+    </div>
+    <ion-button color="dark">Continue</ion-button>
+  </div>
+</form>

@@ -12,9 +12,9 @@
       <ion-label>{{bag.type}}</ion-label>
       <ion-label>Color:{{bag.color}} <span> Size:{{bag.size}}</span></ion-label>
       <ion-label>
-        <span><ion-icon name="remove-outline" (click)="itemDecre()"></ion-icon></span>
-        <span>{{itemCount}}</span>
-        <span><ion-icon name="add-outline" (click)="itemIncre()"></ion-icon></span>
+        <span><ion-icon name="remove-outline" (click)="itemDecre(bag.id)"></ion-icon></span>
+        <span>{{bag.itemCount || 0}}</span>
+        <span><ion-icon name="add-outline" (click)="itemIncre(bag.id)"></ion-icon></span>
       </ion-label>
      </ion-card-content>
    <div class="vertical-align-end">
