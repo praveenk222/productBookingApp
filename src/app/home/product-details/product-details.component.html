@@ -36,5 +36,13 @@
   <ion-card-content>
     Here's a small text description for the card content. Nothing more, nothing less.
   </ion-card-content>
-  <ion-button expand="block" routerLink="/payment">Pay Now</ion-button>
+
+  <ion-card class="paper" > 
+    <a href="#" >Add to Cart ></a> 
+    <ion-item class="wrapper">
+      <ion-span class="minus" (click)="decrementQuantity()">-</ion-span>
+      <ion-span class="num">{{quantity}}</ion-span>
+      <ion-span class="plus" (click)="incrementQuantity()">+</ion-span>
+    </ion-item> 
 </ion-card>
+
