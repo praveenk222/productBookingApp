@@ -2,7 +2,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, NavParams } from '@ionic/angular';
 
 import { HomePageRoutingModule } from './home-routing.module';
 
@@ -17,6 +17,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     HomePageRoutingModule
   ],
   declarations: [HomePage,ProductDetailsComponent],
+  providers:[NavParams],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class HomePageModule {}
