@@ -8,7 +8,6 @@ import { ProfilePage } from './profile/profile.page';
 import { MyBagPage } from './my-bag/my-bag.page';
 import { MobilenoSignupPage } from './mobileno-signup/mobileno-signup.page';
 import { HomePage } from './home/home.page';
-import { MainhomePage } from './mainhome/mainhome.page';
 import { ViewallPage } from './viewall/viewall.page';
 import { PaymentsPage } from './payments/payments.page';
 
@@ -69,10 +68,7 @@ const routes: Routes = [
             path: 'mobileno-signup',
             loadChildren: () => import('./mobileno-signup/mobileno-signup.module').then((m) => m.MobilenoSignupPageModule),
           },
-          {
-            path: 'mainhome',
-            loadChildren: () => import('./mainhome/mainhome.module').then((m) => m.MainhomePageModule),
-          },
+        
           {
             path: 'myorders',
             loadChildren: () => import('./myorders/myorders.module').then((m) => m.MyordersPageModule),
