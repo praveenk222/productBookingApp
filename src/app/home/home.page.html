@@ -143,19 +143,7 @@
      </ion-col>
  </div>
  </div>
-   <ion-card *ngFor="let bag of  baglist" class="cardBag"  routerLink="">
-     <img [src]="bag.bagImg" alt="">
-      <ion-card-content>
-       <ion-label>{{bag.bName}}</ion-label>
-       <ion-label><span>{{bag.title}}</span> <span style="padding-left: 20px; color: blue;float: right;"> {{bag.price | currency:'INR'}}</span></ion-label>
-       <ion-label>{{ bag.quantity}}ml</ion-label>
-      <div class="sub-container">
-       <ion-button color="light">+ BUY ONCE</ion-button>
-       <!-- <ion-button color="success">SUBSCRIBE</ion-button> -->
-      </div>
-      </ion-card-content>
-      
-   </ion-card>
+   
    <!-- <ion-card *ngFor="let bag of  baglist" class="btm-fix" color="success">
      <ion-avatar style="background-color: rgb(11, 212, 11);">
        <ion-icon name="bag-handle-outline"></ion-icon>

@@ -34,7 +34,7 @@ const routes: Routes = [
             loadChildren: () => import('./home/home.module').then((m) => m.HomePageModule),
           },
           {
-            path: 'radio',
+            path: 'cart',
             loadChildren: () => import('./radio/radio.module').then((m) => m.RadioPageModule),
           },
           {
