@@ -19,7 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    // FolderPage,
+    FolderPage,
   ],
   imports: [
     BrowserModule, 
