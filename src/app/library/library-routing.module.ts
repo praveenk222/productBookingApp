@@ -5,7 +5,7 @@ import { LibraryPage } from './library.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'library',
     component: LibraryPage
   }
 ];

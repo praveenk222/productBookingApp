@@ -2,7 +2,45 @@
   <ion-split-pane contentId="main-content">
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
-        
+        <div
+        style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 124px; display: inline-flex">
+        <div style="width: 24px; height: 24px; position: relative">
+          <div class="btn-container">
+
+            <button matRipple style="background: transparent;border: none;color:black;" ><img
+                class="icon" src="./assets/ic_round-arrow-back (3).svg" alt=""></button>
+
+          </div>
+        </div>
+
+        <div class="menu">Menu</div>
+      </div>
+      <div matRipple
+        style="align-self: stretch; padding: 12px; background: #F2F2F2; border-radius: 10px;  justify-content: space-between; align-items: center; display: inline-flex">
+
+
+        <img style="width: 48px; height: 48px; position: relative; border-radius: 100px"
+          src="{{profileUrl}}{{logindata?.ProfilePhoto}}" *ngIf="logindata?.ProfilePhoto"/>
+          <ion-avatar *ngIf="!logindata?.ProfilePhoto" >
+            <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg"  
+              />
+          </ion-avatar>
+        <div
+          style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 6px; display: inline-flex">
+          <div style="color: #ece2e2; font-size: 18px; font-weight: 500; word-wrap: break-word">
+            <a class="links" routerLink="/profile">{{logindata?.FirstName}} {{logindata?.LastName}}</a>
+          </div>
+          <div
+            style="opacity: 0.80; color: #363636; font-size: 14px; font-weight: 400; word-wrap: break-word">
+            {{logindata?.MobileNo}}</div>
+        </div>
+
+        <button matRipple routerLink="/profile"
+          style="width: 24px; height: 24px; position: relative; background: #3355B9; border-radius: 24px; overflow: hidden">
+          <img src="./assets/ri_arrow-right-s-line.svg"
+            style="width: 24px; height: 24px; position: relative; background: #3355B9; border-radius: 24px; overflow: hidden">
+        </button>
+      </div>
       
         <ion-list id="inbox-list">
       

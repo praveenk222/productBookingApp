@@ -6,10 +6,7 @@ import { FolderPage } from '../folder/folder.page';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomePage
-  },
+ 
   {
     path:'product',
     component:ProductDetailsComponent

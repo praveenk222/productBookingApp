@@ -45,8 +45,8 @@
    <h3>Album</h3>
    <button><ion-icon name="arrow-forward-circle"></ion-icon></button>
  </div>
-
- <swiper-container 
+ <app-nearhub [slides]="filteredItems"></app-nearhub>
+ <!-- <swiper-container 
  #swiper
  (afterinit)="swiperReady()"
  (slidechange)="swiperSlideChanged($event)"
@@ -60,8 +60,8 @@
    </div>
    <p class="album-content">album-authors-book</p>
  </swiper-slide>
-</swiper-container>
- <div class="anchor">
+</swiper-container> -->
+ <!-- <div class="anchor">
  <h3>Newest books</h3>
  <button><ion-icon name="arrow-forward-circle"></ion-icon></button>
 </div>
@@ -123,6 +123,7 @@
      <img class="newest-img" [src]="image"/>
    </div>
  </swiper-slide>
-</swiper-container>
-
+</swiper-container> -->
+<h3>Recommended</h3>
+<app-swap-battery-scroll  [slides]="slider"></app-swap-battery-scroll>
 </ion-content>

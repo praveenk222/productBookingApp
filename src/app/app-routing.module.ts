@@ -23,11 +23,7 @@ const routes: Routes = [
         path: '',
         component: FolderPage,
         children: [
-          {
-            path: '',
-            pathMatch: 'full',
-            redirectTo: 'home',
-          },
+          
           {
             path: 'home',
             loadChildren: () => import('./home/home.module').then((m) => m.HomePageModule),
@@ -103,6 +99,10 @@ const routes: Routes = [
           {
             path: 'viewall',
             loadChildren: () => import('./viewall/viewall.module').then((m) => m.ViewallPageModule),
+          },
+          {
+            path: 'login',
+            loadChildren: () => import('./login/login.module').then((m) => m.LoginPageModule),
           },
         ],
       },

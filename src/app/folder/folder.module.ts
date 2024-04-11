@@ -11,6 +11,8 @@ import { ListComponent } from './list/list.component';
 import { BasketComponent } from './basket/basket.component';
 import { SharedModule } from 'src/shared/shared.module';
 import { ListBySubcategoryComponent } from './list-by-subcategory/list-by-subcategory.component';
+import { HomePage } from '../home/home.page';
+
 
 
 
@@ -21,9 +23,10 @@ import { ListBySubcategoryComponent } from './list-by-subcategory/list-by-subcat
     FormsModule,
     IonicModule,
     SharedModule,
-    FolderPageRoutingModule,
+ 
   ],
   declarations: [ 
+
     ListComponent,
     BasketComponent,
     ListBySubcategoryComponent

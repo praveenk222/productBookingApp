@@ -8,15 +8,18 @@ import { HomePageRoutingModule } from './home-routing.module';
 
 import { HomePage } from './home.page';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { NearhubComponent } from './nearhub/nearhub.component';
+import { SwapBatteryScrollComponent } from './swap-battery-scroll/swap-battery-scroll.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+
   ],
-  declarations: [HomePage,ProductDetailsComponent],
+  declarations: [HomePage,ProductDetailsComponent,NearhubComponent,SwapBatteryScrollComponent],
   providers:[NavParams],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })

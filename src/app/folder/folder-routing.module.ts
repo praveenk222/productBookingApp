@@ -12,11 +12,11 @@ import { ListBySubcategoryComponent } from './list-by-subcategory/list-by-subcat
 
 const routes: Routes = [
   
-
   {
     path: '',
-    component: HomePage,
+    component:HomePage,
   },
+
   {
     path: 'list',
     component: ListBySubcategoryComponent,
