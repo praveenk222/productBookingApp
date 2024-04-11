@@ -17,7 +17,7 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     FormsModule,
     IonicModule,
-
+    HomePageRoutingModule
   ],
   declarations: [HomePage,ProductDetailsComponent,NearhubComponent,SwapBatteryScrollComponent],
   providers:[NavParams],
